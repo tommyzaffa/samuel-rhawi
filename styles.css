@@ -4,14 +4,15 @@
    ========================================================= */
 
 /* =========================================================
-   ⚙️  ANCHOR OFFSETS — Personalizza qui per ogni sezione
+   ⚙️  ANCHOR OFFSETS — DESKTOP
+   Personalizza qui per ogni sezione (schermi > 860px).
    Aumenta il valore per far iniziare la sezione PIÙ IN BASSO
    (lasciando più spazio sopra). Diminuiscilo per farla più
    vicino al bordo/navbar. Funziona sia con click sui link
    sia con URL diretti (#hash).
    ========================================================= */
 :root {
-  --offset-default: 90px; /* fallback / mobile */
+  --offset-default: 90px; /* fallback */
 
   --offset-hero:       0px;   /* nessun offset, è la prima */
   --offset-about:      -70px;
@@ -21,6 +22,46 @@
   --offset-press:      -20px;
   --offset-reviews:    0px;
   --offset-contact:    -50px;
+}
+
+/* =========================================================
+   📱  ANCHOR OFFSETS — MOBILE (≤ 860px)
+   Personalizza qui i valori SOLO per mobile/tablet piccolo.
+   Su mobile la navbar e i titoli hanno proporzioni diverse,
+   quindi spesso servono valori differenti dal desktop.
+   ========================================================= */
+@media (max-width: 860px) {
+  :root {
+    --offset-default: 80px; /* fallback mobile */
+
+    --offset-hero:       0px;
+    --offset-about:      -40px;
+    --offset-nursel:     0px;
+    --offset-collection: -40px;
+    --offset-boutique:   -20px;
+    --offset-press:      0px;
+    --offset-reviews:    0px;
+    --offset-contact:    -30px;
+  }
+}
+
+/* =========================================================
+   📱  ANCHOR OFFSETS — MOBILE PICCOLO (≤ 520px)
+   Override extra per smartphone stretti, se servono.
+   ========================================================= */
+@media (max-width: 520px) {
+  :root {
+    --offset-default: 70px;
+
+    --offset-hero:       0px;
+    --offset-about:      -30px;
+    --offset-nursel:     0px;
+    --offset-collection: -30px;
+    --offset-boutique:   -10px;
+    --offset-press:      0px;
+    --offset-reviews:    0px;
+    --offset-contact:    -20px;
+  }
 }
 
 #hero       { scroll-margin-top: var(--offset-hero); }
