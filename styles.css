@@ -35,13 +35,13 @@
     --offset-default: 80px; /* fallback mobile */
 
     --offset-hero:       0px;
-    --offset-about:      -40px;
+    --offset-about:      0px;
     --offset-nursel:     0px;
-    --offset-collection: -40px;
-    --offset-boutique:   -20px;
+    --offset-collection: 0px;
+    --offset-boutique:   0px;
     --offset-press:      0px;
     --offset-reviews:    0px;
-    --offset-contact:    -30px;
+    --offset-contact:    0px;
   }
 }
 
@@ -54,13 +54,13 @@
     --offset-default: 70px;
 
     --offset-hero:       0px;
-    --offset-about:      -30px;
+    --offset-about:      0px;
     --offset-nursel:     0px;
-    --offset-collection: -30px;
-    --offset-boutique:   -10px;
+    --offset-collection: 0px;
+    --offset-boutique:   0px;
     --offset-press:      0px;
     --offset-reviews:    0px;
-    --offset-contact:    -20px;
+    --offset-contact:    0px;
   }
 }
 
