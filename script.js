@@ -63,6 +63,21 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  /* ====== BODY SCROLL LOCK (preserva la posizione di scroll) ======
+     body.no-scroll usa position:fixed → senza salvare/ripristinare la
+     posizione la pagina tornerebbe in cima alla riapertura. */
+  let savedScrollY = 0;
+  function lockBody() {
+    savedScrollY = window.scrollY;
+    document.body.style.top = '-' + savedScrollY + 'px';
+    document.body.classList.add('no-scroll');
+  }
+  function unlockBody() {
+    document.body.classList.remove('no-scroll');
+    document.body.style.top = '';
+    window.scrollTo(0, savedScrollY);
+  }
+
   /* ====== BURGER ====== */
   const burger = document.getElementById('navBurger');
   const navLinks = document.getElementById('navLinks');
@@ -71,14 +86,16 @@
       const open = navLinks.classList.toggle('is-open');
       burger.classList.toggle('is-open', open);
       burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-      document.body.classList.toggle('no-scroll', open);
+      if (nav) nav.classList.toggle('is-menu-open', open);
+      if (open) lockBody(); else unlockBody();
     });
     navLinks.querySelectorAll('a').forEach(a => {
       a.addEventListener('click', () => {
         navLinks.classList.remove('is-open');
         burger.classList.remove('is-open');
         burger.setAttribute('aria-expanded', 'false');
-        document.body.classList.remove('no-scroll');
+        if (nav) nav.classList.remove('is-menu-open');
+        unlockBody();
       });
     });
   }
@@ -178,12 +195,12 @@
     lbImg.src = lbItems[lbIndex].getAttribute('href');
     lb.classList.add('is-open');
     lb.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('no-scroll');
+    lockBody();
   }
   function closeLb() {
     lb.classList.remove('is-open');
     lb.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('no-scroll');
+    unlockBody();
   }
   function navLb(delta) {
     lbIndex = (lbIndex + delta + lbItems.length) % lbItems.length;

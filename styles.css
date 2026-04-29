@@ -456,6 +456,14 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -0
 .nav__burger.is-open span:nth-child(2) { opacity: 0; }
 .nav__burger.is-open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
+/* Quando il drawer mobile è aperto (sfondo ivory), forza colori scuri
+   sul burger (X di chiusura) e sul selettore lingua per leggibilità. */
+.nav.is-menu-open .nav__burger span { background: var(--navy) !important; }
+.nav.is-menu-open .lang__current {
+  color: var(--navy) !important;
+  border-color: rgba(30, 58, 95, 0.4) !important;
+}
+
 /* ---------- HERO ---------- */
 .hero {
   position: relative;
