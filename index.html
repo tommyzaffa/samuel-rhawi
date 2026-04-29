@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Rhawi by Nursel — Boutique di pelletteria di lusso a Lugano</title>
+  <meta name="description" content="Samuel Rhawi by Nursel — Boutique di moda donna esclusiva, pelletteria raffinata, calzature e accessori in vera pelle nel cuore di Lugano." />
+  <meta name="theme-color" content="#1e3a5f" />
+
+  <link rel="icon" type="image/webp" href="img/logo (abbreviato ma buona qualita).jpg.webp" />
+  <link rel="apple-touch-icon" href="img/logo (abbreviato ma buona qualita).jpg.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__curtain preloader__curtain--top"></div>
+    <div class="preloader__curtain preloader__curtain--bot"></div>
+    <div class="preloader__inner">
+      <img src="img/logo (abbreviato ma buona qualita).jpg.webp" alt="Samuel Rhawi" class="preloader__logo" />
+      <h1 class="preloader__title" aria-label="Samuel Rhawi">
+        <span class="preloader__word"><span>Samuel</span></span>
+        <span class="preloader__word"><span>Rhawi</span></span>
+      </h1>
+      <div class="preloader__line"></div>
+      <span class="preloader__sub">by Nursel</span>
+    </div>
+  </div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Samuel Rhawi by Nursel">
+        <img src="img/logo (abbreviato ma buona qualita).jpg.webp" alt="" class="nav__logo" />
+        <span class="nav__brand-text">Samuel Rhawi<small>by Nursel</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about" data-i18n="nav_about">La Maison</a>
+        <a href="#nursel" data-i18n="nav_nursel">Nursel</a>
+        <a href="#collection" data-i18n="nav_collection">Collezione</a>
+        <a href="#boutique" data-i18n="nav_boutique">Boutique</a>
+        <a href="#press" data-i18n="nav_press">Stampa</a>
+        <a href="#reviews" data-i18n="nav_reviews">Recensioni</a>
+        <a href="#contact" data-i18n="nav_contact">Contatti</a>
+      </nav>
+
+      <div class="nav__right">
+        <div class="lang" id="lang">
+          <button class="lang__current" id="langCurrent" aria-haspopup="listbox" aria-expanded="false">
+            <span id="langLabel">IT</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang__menu" role="listbox">
+            <li><button data-lang="it" role="option">Italiano</button></li>
+            <li><button data-lang="en" role="option">English</button></li>
+            <li><button data-lang="fr" role="option">Français</button></li>
+            <li><button data-lang="de" role="option">Deutsch</button></li>
+          </ul>
+        </div>
+
+        <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero__bg" aria-hidden="true">
+      <img src="img/modella 4.png" alt="" class="hero__img is-active" />
+      <img src="img/modella 1.png" alt="" class="hero__img" />
+      <img src="img/modella 2.png" alt="" class="hero__img" />
+      <img src="img/modella 3.png" alt="" class="hero__img" />
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow" data-i18n="hero_eyebrow">Istanbul · Lugano</div>
+      <h1 class="hero__title">
+        <span class="hero__title-line">Samuel Rhawi</span>
+        <span class="hero__title-sub">by Nursel</span>
+      </h1>
+      <p class="hero__tagline" data-i18n="hero_tagline">L'eleganza autentica della pelle pregiata.</p>
+      <div class="hero__cta">
+        <a href="#collection" class="btn btn--ghost" data-i18n="hero_cta_collection">Scopri la collezione</a>
+        <a href="#contact" class="btn btn--solid" data-i18n="hero_cta_visit">Visita la boutique</a>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Scroll">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT / LA MAISON ============ -->
+  <section class="section section--about" id="about">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow" data-i18n="about_eyebrow">La Maison</span>
+        <h2 class="section__title" data-i18n="about_title">Da Istanbul a Lugano,<br/>una storia di pelle</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p data-i18n="about_p1">Samuel Rhawi è una <strong>maison di moda con sede a Istanbul</strong>, specializzata in pelletteria di lusso, cappotti in cashmere e pellicce pregiate. Il marchio è riconosciuto per i suoi capi sartoriali di alta qualità, realizzati con tessuti italiani e materiali nobili come volpe, visone e cincillà.</p>
+          <p data-i18n="about_p2">Nel cuore di Lugano nasce <strong>Samuel Rhawi by Nursel</strong>, lo showroom in Via Giuseppe Motta 7 dove gli articoli in pelle sono protagonisti assoluti. Una filiera diretta con il produttore di famiglia consente consegne rapide e ordini personalizzati su misura.</p>
+          <p data-i18n="about_p3">Borse, calzature, giacche, cinture e accessori — ogni pezzo racconta la cura artigianale che da generazioni distingue il nostro marchio.</p>
+        </div>
+        <div class="about__media">
+          <img src="img/scarpe e borsa.png" alt="Scarpe e borsa in pelle" />
+          <div class="about__badge">
+            <span class="about__badge-num">2019</span>
+            <span class="about__badge-text" data-i18n="about_badge">Boutique aperta a Lugano</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NURSEL ============ -->
+  <section class="section section--nursel" id="nursel">
+    <div class="container">
+      <div class="nursel__grid">
+        <div class="nursel__media">
+          <img src="img/articolo 2.png" alt="Nursel — Samuel Rhawi by Nursel" />
+        </div>
+        <div class="nursel__text">
+          <span class="section__eyebrow" data-i18n="nursel_eyebrow">La donna dietro la boutique</span>
+          <h2 class="section__title" data-i18n="nursel_title">Nursel</h2>
+          <p class="nursel__lead" data-i18n="nursel_lead">«La donna che veste in pelle è di forte carattere e decisa. La pelle non passa inosservata, è un modo di essere che trasmette eleganza.»</p>
+          <p data-i18n="nursel_p1">Nursel è il volto e il cuore della boutique luganese. Professionista del settore con una profonda conoscenza della pelletteria, accoglie ogni cliente con un servizio personalizzato e collezioni accuratamente curate.</p>
+          <p data-i18n="nursel_p2">Grazie all'azienda di famiglia che produce direttamente articoli in pelle, Nursel offre la possibilità di ordinare pezzi personalizzati e taglie non disponibili in showroom, con consegna in pochissimi giorni.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FILOSOFIA ============ -->
+  <section class="quote">
+    <div class="container">
+      <blockquote class="quote__text" data-i18n="quote_text">
+        «La moda è come un'onda: arriva con forza e poi scompare lasciando mille interpretazioni dietro di sé. La pelle, invece, ritorna sempre — perché non è moda, è eleganza.»
+      </blockquote>
+      <cite class="quote__cite">— Nursel Rhawi</cite>
+    </div>
+  </section>
+
+  <!-- ============ COLLECTION / GALLERIA ============ -->
+  <section class="section section--collection" id="collection">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow" data-i18n="collection_eyebrow">La Collezione</span>
+        <h2 class="section__title" data-i18n="collection_title">Pelletteria, calzature, accessori</h2>
+        <p class="section__lead" data-i18n="collection_lead">Capi e accessori in vera pelle per donna e uomo. Borse, scarpe, cinture, giacche e portamonete — ogni pezzo è espressione di artigianalità e raffinatezza.</p>
+      </div>
+
+      <div class="gallery">
+        <a class="gallery__item gallery__item--tall" href="img/modella 1.png" data-lightbox>
+          <img src="img/modella 1.png" alt="Cappotto in pelle e tessuto" loading="lazy" />
+        </a>
+        <a class="gallery__item" href="img/borse.png" data-lightbox>
+          <img src="img/borse.png" alt="Borse in pelle" loading="lazy" />
+          <span class="gallery__cap" data-i18n="cap_bags">Borse</span>
+        </a>
+        <a class="gallery__item" href="img/scarpe e borsa 2.png" data-lightbox>
+          <img src="img/scarpe e borsa 2.png" alt="Calzature e borse" loading="lazy" />
+          <span class="gallery__cap" data-i18n="cap_set">Calzature & Borse</span>
+        </a>
+        <a class="gallery__item gallery__item--tall" href="img/modella 2.png" data-lightbox>
+          <img src="img/modella 2.png" alt="Modella con capo in pelle" loading="lazy" />
+        </a>
+        <a class="gallery__item" href="img/scarpe specchio.png" data-lightbox>
+          <img src="img/scarpe specchio.png" alt="Calzature in showroom" loading="lazy" />
+          <span class="gallery__cap" data-i18n="cap_shoes">Calzature</span>
+        </a>
+        <a class="gallery__item" href="img/modella 3.png" data-lightbox>
+          <img src="img/modella 3.png" alt="Capo donna" loading="lazy" />
+        </a>
+        <a class="gallery__item" href="img/scarpe e borsa.png" data-lightbox>
+          <img src="img/scarpe e borsa.png" alt="Set scarpe e borsa" loading="lazy" />
+          <span class="gallery__cap" data-i18n="cap_accessories">Accessori</span>
+        </a>
+        <a class="gallery__item gallery__item--tall" href="img/modella 4.png" data-lightbox>
+          <img src="img/modella 4.png" alt="Cappotto con collo in pelliccia" loading="lazy" />
+        </a>
+        <a class="gallery__item gallery__item--tall" href="img/modella 7.jpg" data-lightbox>
+          <img src="img/modella 7.jpg" alt="Cappotto verde con pelliccia" loading="lazy" />
+        </a>
+        <a class="gallery__item" href="img/giacca.jpg" data-lightbox>
+          <img src="img/giacca.jpg" alt="Giacca rossa con collo in pelliccia" loading="lazy" />
+          <span class="gallery__cap" data-i18n="cap_jackets">Giacche</span>
+        </a>
+        <a class="gallery__item" href="img/cappotto.png" data-lightbox>
+          <img src="img/cappotto.png" alt="Cappotto cammello con cintura" loading="lazy" />
+          <span class="gallery__cap" data-i18n="cap_coats">Cappotti</span>
+        </a>
+        <a class="gallery__item" href="img/modella 8.jpg" data-lightbox>
+          <img src="img/modella 8.jpg" alt="Cappotto grigio con polsini in pelliccia" loading="lazy" />
+        </a>
+      </div>
+
+      <p class="collection__note" data-i18n="collection_note">
+        Le immagini sono solo una piccola anticipazione. Vi invitiamo a visitare la boutique per scoprire l'intera collezione, toccare i materiali e provare i capi.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ BOUTIQUE INTERIOR ============ -->
+  <section class="section section--boutique" id="boutique">
+    <div class="container">
+      <div class="boutique__grid">
+        <div class="boutique__text">
+          <span class="section__eyebrow" data-i18n="boutique_eyebrow">Lo Showroom</span>
+          <h2 class="section__title" data-i18n="boutique_title">Un'esperienza<br/>nel cuore di Lugano</h2>
+          <p data-i18n="boutique_p1">Nel pieno centro di Lugano, a pochi passi dall'Autosilo Motta, lo showroom Samuel Rhawi by Nursel offre un'ampia selezione di pelletteria: borse, calzature, cinture, giacche, portamonete e molto altro.</p>
+          <p data-i18n="boutique_p2">Il cliente ha la possibilità di ordinare direttamente l'articolo desiderato, anche se non disponibile in loco: in pochi giorni sarà pronto per il ritiro, grazie alla filiera diretta con il produttore.</p>
+
+          <div class="boutique__features">
+            <div class="feature">
+              <div class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+              </div>
+              <div>
+                <h4 data-i18n="feature1_t">Servizio personalizzato</h4>
+                <p data-i18n="feature1_d">Ordini su misura, taglie speciali e consulenza dedicata.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg>
+              </div>
+              <div>
+                <h4 data-i18n="feature2_t">Filiera diretta</h4>
+                <p data-i18n="feature2_d">Produzione di famiglia, qualità garantita e consegne rapide.</p>
+              </div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2l2.4 6.9H22l-6 4.5 2.3 7-6.3-4.6L5.7 20.4l2.3-7-6-4.5h7.6z"/></svg>
+              </div>
+              <div>
+                <h4 data-i18n="feature3_t">Materiali pregiati</h4>
+                <p data-i18n="feature3_d">Vera pelle, tessuti italiani, cashmere e pellicce nobili.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="boutique__media">
+          <img src="img/interno.jpg" alt="Interno della boutique" />
+          <div class="boutique__media-grid">
+            <img src="img/interno scarpe.jpg" alt="Showroom calzature" />
+            <img src="img/interno sarpe 2.jpg" alt="Showroom calzature" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMING SOON GRANCIA ============ -->
+  <section class="coming">
+    <div class="container">
+      <div class="coming__inner">
+        <span class="coming__tag" data-i18n="coming_tag">Coming Soon</span>
+        <h2 class="coming__title" data-i18n="coming_title">Una nuova boutique al Parco Commerciale Grancia</h2>
+        <p class="coming__text" data-i18n="coming_text">Presto Nursel aprirà una seconda sede al Parco Commerciale Grancia, per portare ancora più vicino l'eleganza Samuel Rhawi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRESS / ARTICOLO ============ -->
+  <section class="section section--press" id="press">
+    <div class="container">
+      <div class="press__grid">
+        <div class="press__media">
+          <img src="img/articolo 1.png" alt="Articolo Tio.ch su Samuel Rhawi" />
+        </div>
+        <div class="press__text">
+          <span class="section__eyebrow" data-i18n="press_eyebrow">Stampa</span>
+          <h2 class="section__title" data-i18n="press_title">«L'eleganza passa anche dal vestire in pelle»</h2>
+          <p class="press__source">Tio.ch · Fashion Channel · 2019</p>
+          <p data-i18n="press_p1">Un'intervista a Nursel Rhawi sulla moda, sull'arte della pelletteria e sulla donna che sceglie di vestire la pelle. Un'occasione per raccontare la filosofia che anima la boutique e il legame con la produzione di famiglia.</p>
+          <a href="https://www.tio.ch/rubriche/fashionchannel/1410125/pelle-donna-showroom-lugano-articoli-eleganza-vestire" target="_blank" rel="noopener noreferrer" class="btn btn--solid" data-i18n="press_cta">Leggi l'articolo completo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section section--reviews" id="reviews">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow" data-i18n="reviews_eyebrow">Le Voci dei Clienti</span>
+        <h2 class="section__title" data-i18n="reviews_title">Recensioni</h2>
+        <div class="reviews__stars" aria-label="5 stelle su 5">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="reviews__rating" data-i18n="reviews_rating">5,0 su 5 — Recensioni Google</p>
+      </div>
+
+      <div class="reviews__grid">
+        <figure class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote data-i18n="review1">«Good selection of leather shoes for men and women with very reasonable prices. Design and quality are excellent. Bought a pair and loving it.»</blockquote>
+          <figcaption>— Google Review</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote data-i18n="review2">«Best leather shop in Lugano.»</blockquote>
+          <figcaption>— Google Review</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="review__stars">★★★★★</div>
+          <blockquote data-i18n="review3">«Ragazza adorabile, prodotti di qualità a un prezzo molto buono.»</blockquote>
+          <figcaption>— Google Review</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow" data-i18n="contact_eyebrow">Vieni a trovarci</span>
+        <h2 class="section__title" data-i18n="contact_title">Boutique a Lugano</h2>
+        <p class="section__lead" data-i18n="contact_lead">Vi aspettiamo nel nostro showroom per scoprire le collezioni, ricevere consigli personalizzati e provare i nostri capi in pelle.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__row">
+            <h4 data-i18n="contact_address_title">Indirizzo</h4>
+            <p>Via Giuseppe Motta 7<br/>6900 Lugano · Svizzera</p>
+            <a href="https://maps.google.com/?q=Via+Giuseppe+Motta+7,+6900+Lugano" target="_blank" rel="noopener" data-i18n="contact_directions">Indicazioni stradali →</a>
+          </div>
+
+          <div class="contact__row">
+            <h4 data-i18n="contact_phone_title">Telefono & WhatsApp</h4>
+            <p><a href="tel:+41766934737">+41 76 693 47 37</a></p>
+            <a class="contact__wa" href="https://wa.me/41766934737" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.34 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+              <span data-i18n="contact_wa_label">Scrivici su WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="contact__row">
+            <h4 data-i18n="contact_hours_title">Orari di apertura</h4>
+            <ul class="hours">
+              <li><span data-i18n="day_mon">Lunedì</span><span>09:30 — 18:00</span></li>
+              <li><span data-i18n="day_tue">Martedì</span><span>09:30 — 18:00</span></li>
+              <li><span data-i18n="day_wed">Mercoledì</span><span>09:30 — 18:00</span></li>
+              <li><span data-i18n="day_thu">Giovedì</span><span>09:30 — 18:00</span></li>
+              <li><span data-i18n="day_fri">Venerdì</span><span>09:30 — 18:00</span></li>
+              <li><span data-i18n="day_sat">Sabato</span><span>09:30 — 17:00</span></li>
+              <li><span data-i18n="day_sun">Domenica</span><span data-i18n="closed">Chiuso</span></li>
+            </ul>
+          </div>
+
+          <div class="contact__row">
+            <h4 data-i18n="contact_social_title">Social</h4>
+            <a href="https://www.instagram.com/samuel_rhawi_by_nursel" target="_blank" rel="noopener" class="contact__social">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              <span>@samuel_rhawi_by_nursel</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps?q=Via+Giuseppe+Motta+7,+6900+Lugano&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mappa — Samuel Rhawi by Nursel">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <img src="img/logo (abbreviato ma buona qualita).jpg.webp" alt="" />
+          <div>
+            <strong>Samuel Rhawi</strong>
+            <span>by Nursel</span>
+          </div>
+        </div>
+        <p class="footer__tag" data-i18n="footer_tag">Leather &amp; Shoes — Istanbul · Lugano</p>
+        <p class="footer__copy">© <span id="year"></span> Samuel Rhawi by Nursel — <span data-i18n="footer_rights">Tutti i diritti riservati.</span></p>
+        <p class="footer__credit"><span data-i18n="footer_credit">Sito sviluppato da</span> <a href="https://tommyzaffa.com" target="_blank" rel="noopener">Thomas Zaffalon</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Close">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img class="lightbox__img" id="lightboxImg" alt="" />
+    <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next">›</button>
+  </div>
+
+  <!-- ============ FLOATING WHATSAPP ============ -->
+  <a class="fab-wa" href="https://wa.me/41766934737" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.34 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+  </a>
+
+  <script src="translations.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
