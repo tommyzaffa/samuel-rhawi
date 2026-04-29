@@ -73,9 +73,16 @@
     document.body.classList.add('no-scroll');
   }
   function unlockBody() {
+    // disabilita temporaneamente lo smooth scroll del CSS per evitare
+    // l'animazione di ritorno alla posizione precedente
+    const html = document.documentElement;
+    const prev = html.style.scrollBehavior;
+    html.style.scrollBehavior = 'auto';
     document.body.classList.remove('no-scroll');
     document.body.style.top = '';
     window.scrollTo(0, savedScrollY);
+    // ripristina al frame successivo
+    requestAnimationFrame(() => { html.style.scrollBehavior = prev; });
   }
 
   /* ====== BURGER ====== */
