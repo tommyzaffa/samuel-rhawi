@@ -18,7 +18,7 @@ window.TRANSLATIONS = {
     about_eyebrow: "La Maison",
     about_title: "Da Istanbul a Lugano,<br/>una storia di pelle",
     about_p1: "Samuel Rhawi è una <strong>maison di moda con sede a Istanbul</strong>, specializzata in pelletteria di lusso, cappotti in cashmere e pellicce pregiate. Il marchio è riconosciuto per i suoi capi sartoriali di alta qualità, realizzati con tessuti italiani e materiali nobili come volpe, visone e cincillà.",
-    about_p2: "Nel cuore di Lugano nasce <strong>Samuel Rhawi by Nursel</strong>, lo showroom in Via Giuseppe Motta 7 dove gli articoli in pelle sono protagonisti assoluti. Una filiera diretta con il produttore di famiglia consente consegne rapide e ordini personalizzati su misura.",
+    about_p2: "Nel cuore di Lugano nasce <strong>Samuel Rhawi by Nursel</strong>, lo showroom in Via Giuseppe Motta 7 dove gli articoli in pelle sono protagonisti assoluti. Una filiera diretta con la manifattura del marchio consente consegne rapide e ordini personalizzati su misura.",
     about_p3: "Borse, calzature, giacche, cinture e accessori — ogni pezzo racconta la cura artigianale che da generazioni distingue il nostro marchio.",
     about_badge: "Boutique aperta a Lugano",
 
@@ -26,7 +26,7 @@ window.TRANSLATIONS = {
     nursel_title: "Nursel",
     nursel_lead: "«La donna che veste in pelle è di forte carattere e decisa. La pelle non passa inosservata, è un modo di essere che trasmette eleganza.»",
     nursel_p1: "Nursel è il volto e il cuore della boutique luganese. Professionista del settore con una profonda conoscenza della pelletteria, accoglie ogni cliente con un servizio personalizzato e collezioni accuratamente curate.",
-    nursel_p2: "Grazie all'azienda di famiglia che produce direttamente articoli in pelle, Nursel offre la possibilità di ordinare pezzi personalizzati e taglie non disponibili in showroom, con consegna in pochissimi giorni.",
+    nursel_p2: "Grazie alla filiera diretta con la manifattura del marchio, Nursel offre la possibilità di ordinare pezzi personalizzati e taglie non disponibili in showroom, con consegna in pochissimi giorni.",
 
     quote_text: "«La moda è come un'onda: arriva con forza e poi scompare lasciando mille interpretazioni dietro di sé. La pelle, invece, ritorna sempre — perché non è moda, è eleganza.»",
 
@@ -48,7 +48,7 @@ window.TRANSLATIONS = {
     feature1_t: "Servizio personalizzato",
     feature1_d: "Ordini su misura, taglie speciali e consulenza dedicata.",
     feature2_t: "Filiera diretta",
-    feature2_d: "Produzione di famiglia, qualità garantita e consegne rapide.",
+    feature2_d: "Produzione diretta del marchio, qualità garantita e consegne rapide.",
     feature3_t: "Materiali pregiati",
     feature3_d: "Vera pelle, tessuti italiani, cashmere e pellicce nobili.",
 
@@ -58,7 +58,7 @@ window.TRANSLATIONS = {
 
     press_eyebrow: "Stampa",
     press_title: "«L'eleganza passa anche dal vestire in pelle»",
-    press_p1: "Un'intervista a Nursel Rhawi sulla moda, sull'arte della pelletteria e sulla donna che sceglie di vestire la pelle. Un'occasione per raccontare la filosofia che anima la boutique e il legame con la produzione di famiglia.",
+    press_p1: "Un'intervista a Nursel Rhawi sulla moda, sull'arte della pelletteria e sulla donna che sceglie di vestire la pelle. Un'occasione per raccontare la filosofia che anima la boutique e il legame con la manifattura del marchio.",
     press_cta: "Leggi l'articolo completo",
 
     reviews_eyebrow: "Le Voci dei Clienti",
@@ -103,7 +103,7 @@ window.TRANSLATIONS = {
     about_eyebrow: "The Maison",
     about_title: "From Istanbul to Lugano,<br/>a story written in leather",
     about_p1: "Samuel Rhawi is an <strong>Istanbul-based fashion house</strong>, specialising in luxury leather, cashmere coats and fine fur. The brand is renowned for its tailored, high-quality garments, crafted with Italian fabrics and noble materials such as fox, mink and chinchilla.",
-    about_p2: "In the heart of Lugano, <strong>Samuel Rhawi by Nursel</strong> opens its showroom at Via Giuseppe Motta 7 — a space where leather is the absolute protagonist. A direct supply chain with the family workshop allows for rapid deliveries and bespoke orders.",
+    about_p2: "In the heart of Lugano, <strong>Samuel Rhawi by Nursel</strong> opens its showroom at Via Giuseppe Motta 7 — a space where leather is the absolute protagonist. A direct supply chain with the brand's own workshop allows for rapid deliveries and bespoke orders.",
     about_p3: "Bags, shoes, jackets, belts and accessories — every piece tells the story of the artisanal care that has distinguished our brand for generations.",
     about_badge: "Boutique opened in Lugano",
 
@@ -111,7 +111,7 @@ window.TRANSLATIONS = {
     nursel_title: "Nursel",
     nursel_lead: "“A woman who wears leather has strong character and conviction. Leather never goes unnoticed — it is a way of being that radiates elegance.”",
     nursel_p1: "Nursel is the face and heart of the Lugano boutique. A seasoned professional with deep knowledge of fine leather goods, she welcomes every client with personalised service and carefully curated collections.",
-    nursel_p2: "Thanks to the family workshop that produces leather goods directly, Nursel offers the possibility to order custom pieces and special sizes not available in the showroom, with delivery in just a few days.",
+    nursel_p2: "Thanks to the direct supply chain with the brand's own workshop, Nursel offers the possibility to order custom pieces and special sizes not available in the showroom, with delivery in just a few days.",
 
     quote_text: "“Fashion is like a wave: it arrives with force and then disappears, leaving a thousand interpretations behind. Leather, on the other hand, always returns — because it is not fashion, it is elegance.”",
 
@@ -133,7 +133,7 @@ window.TRANSLATIONS = {
     feature1_t: "Personalised service",
     feature1_d: "Bespoke orders, special sizes and dedicated consultancy.",
     feature2_t: "Direct supply chain",
-    feature2_d: "Family-run production, guaranteed quality, swift delivery.",
+    feature2_d: "Direct production by the brand, guaranteed quality, swift delivery.",
     feature3_t: "Premium materials",
     feature3_d: "Genuine leather, Italian fabrics, cashmere and noble furs.",
 
@@ -143,7 +143,7 @@ window.TRANSLATIONS = {
 
     press_eyebrow: "Press",
     press_title: "“Elegance also comes from dressing in leather”",
-    press_p1: "An interview with Nursel Rhawi about fashion, the art of leather and the woman who chooses to dress in it. An occasion to share the philosophy that animates the boutique and the bond with the family workshop.",
+    press_p1: "An interview with Nursel Rhawi about fashion, the art of leather and the woman who chooses to dress in it. An occasion to share the philosophy that animates the boutique and the bond with the brand's own workshop.",
     press_cta: "Read the full article",
 
     reviews_eyebrow: "Voices of our clients",
@@ -188,7 +188,7 @@ window.TRANSLATIONS = {
     about_eyebrow: "La Maison",
     about_title: "D'Istanbul à Lugano,<br/>une histoire de cuir",
     about_p1: "Samuel Rhawi est une <strong>maison de mode basée à Istanbul</strong>, spécialisée dans la maroquinerie de luxe, les manteaux en cachemire et les fourrures précieuses. La marque est reconnue pour ses pièces sur mesure de haute qualité, réalisées avec des tissus italiens et des matières nobles comme le renard, le vison et le chinchilla.",
-    about_p2: "Au cœur de Lugano naît <strong>Samuel Rhawi by Nursel</strong>, le showroom situé Via Giuseppe Motta 7 où le cuir est l'absolu protagoniste. Une filière directe avec la manufacture familiale permet livraisons rapides et commandes personnalisées sur mesure.",
+    about_p2: "Au cœur de Lugano naît <strong>Samuel Rhawi by Nursel</strong>, le showroom situé Via Giuseppe Motta 7 où le cuir est l'absolu protagoniste. Une filière directe avec la manufacture de la marque permet livraisons rapides et commandes personnalisées sur mesure.",
     about_p3: "Sacs, chaussures, vestes, ceintures et accessoires — chaque pièce raconte le soin artisanal qui distingue notre marque depuis des générations.",
     about_badge: "Boutique ouverte à Lugano",
 
@@ -196,7 +196,7 @@ window.TRANSLATIONS = {
     nursel_title: "Nursel",
     nursel_lead: "« La femme qui s'habille en cuir a un caractère fort et décidé. Le cuir ne passe jamais inaperçu, c'est une façon d'être qui rayonne d'élégance. »",
     nursel_p1: "Nursel est le visage et le cœur de la boutique luganaise. Professionnelle aguerrie, dotée d'une connaissance approfondie de la maroquinerie, elle accueille chaque cliente avec un service personnalisé et des collections soigneusement choisies.",
-    nursel_p2: "Grâce à l'entreprise familiale qui produit directement les articles en cuir, Nursel offre la possibilité de commander des pièces personnalisées et des tailles non disponibles en showroom, avec livraison en quelques jours.",
+    nursel_p2: "Grâce à la filière directe avec la manufacture de la marque, Nursel offre la possibilité de commander des pièces personnalisées et des tailles non disponibles en showroom, avec livraison en quelques jours.",
 
     quote_text: "« La mode est comme une vague : elle arrive avec force puis disparaît, laissant mille interprétations derrière elle. Le cuir, lui, revient toujours — car ce n'est pas une mode, c'est de l'élégance. »",
 
@@ -218,7 +218,7 @@ window.TRANSLATIONS = {
     feature1_t: "Service personnalisé",
     feature1_d: "Commandes sur mesure, tailles spéciales et conseil dédié.",
     feature2_t: "Filière directe",
-    feature2_d: "Production familiale, qualité garantie et livraisons rapides.",
+    feature2_d: "Production directe de la marque, qualité garantie et livraisons rapides.",
     feature3_t: "Matières précieuses",
     feature3_d: "Cuir véritable, tissus italiens, cachemire et fourrures nobles.",
 
@@ -228,7 +228,7 @@ window.TRANSLATIONS = {
 
     press_eyebrow: "Presse",
     press_title: "« L'élégance passe aussi par le cuir »",
-    press_p1: "Un entretien avec Nursel Rhawi sur la mode, l'art de la maroquinerie et la femme qui choisit de s'habiller en cuir. L'occasion de partager la philosophie qui anime la boutique et le lien avec la manufacture familiale.",
+    press_p1: "Un entretien avec Nursel Rhawi sur la mode, l'art de la maroquinerie et la femme qui choisit de s'habiller en cuir. L'occasion de partager la philosophie qui anime la boutique et le lien avec la manufacture de la marque.",
     press_cta: "Lire l'article complet",
 
     reviews_eyebrow: "La voix des clients",
@@ -273,7 +273,7 @@ window.TRANSLATIONS = {
     about_eyebrow: "Die Maison",
     about_title: "Von Istanbul nach Lugano —<br/>eine Geschichte aus Leder",
     about_p1: "Samuel Rhawi ist ein <strong>in Istanbul ansässiges Modehaus</strong>, spezialisiert auf Luxusleder, Kaschmirmäntel und edle Pelze. Die Marke ist bekannt für maßgeschneiderte, hochwertige Kleidungsstücke, gefertigt aus italienischen Stoffen und edlen Materialien wie Fuchs, Nerz und Chinchilla.",
-    about_p2: "Im Herzen von Lugano entsteht <strong>Samuel Rhawi by Nursel</strong>, der Showroom an der Via Giuseppe Motta 7 — ein Ort, an dem Lederwaren absolute Protagonisten sind. Eine direkte Lieferkette mit der familieneigenen Manufaktur ermöglicht schnelle Lieferungen und massgeschneiderte Bestellungen.",
+    about_p2: "Im Herzen von Lugano entsteht <strong>Samuel Rhawi by Nursel</strong>, der Showroom an der Via Giuseppe Motta 7 — ein Ort, an dem Lederwaren absolute Protagonisten sind. Eine direkte Lieferkette mit der markeneigenen Manufaktur ermöglicht schnelle Lieferungen und massgeschneiderte Bestellungen.",
     about_p3: "Taschen, Schuhe, Jacken, Gürtel und Accessoires — jedes Stück erzählt von der handwerklichen Sorgfalt, die unsere Marke seit Generationen auszeichnet.",
     about_badge: "Boutique-Eröffnung in Lugano",
 
@@ -281,7 +281,7 @@ window.TRANSLATIONS = {
     nursel_title: "Nursel",
     nursel_lead: "„Eine Frau, die Leder trägt, hat starken Charakter und Entschlossenheit. Leder bleibt nie unbemerkt — es ist eine Art zu sein, die Eleganz ausstrahlt.“",
     nursel_p1: "Nursel ist das Gesicht und das Herz der Lugano-Boutique. Als erfahrene Fachfrau mit tiefem Wissen über Lederwaren empfängt sie jede Kundin mit persönlichem Service und sorgfältig kuratierten Kollektionen.",
-    nursel_p2: "Dank des familieneigenen Betriebs, der Lederwaren direkt produziert, bietet Nursel die Möglichkeit, individuelle Stücke und Sondergrössen zu bestellen, die im Showroom nicht erhältlich sind — Lieferung in nur wenigen Tagen.",
+    nursel_p2: "Dank der direkten Lieferkette zur markeneigenen Manufaktur bietet Nursel die Möglichkeit, individuelle Stücke und Sondergrössen zu bestellen, die im Showroom nicht erhältlich sind — Lieferung in nur wenigen Tagen.",
 
     quote_text: "„Mode ist wie eine Welle: Sie kommt mit Wucht und verschwindet wieder, hinterlässt tausend Interpretationen. Leder hingegen kehrt immer zurück — denn es ist keine Mode, es ist Eleganz.“",
 
@@ -303,7 +303,7 @@ window.TRANSLATIONS = {
     feature1_t: "Persönlicher Service",
     feature1_d: "Massgefertigte Bestellungen, Sondergrössen und individuelle Beratung.",
     feature2_t: "Direkte Lieferkette",
-    feature2_d: "Familienproduktion, garantierte Qualität, schnelle Lieferung.",
+    feature2_d: "Markeneigene Produktion, garantierte Qualität, schnelle Lieferung.",
     feature3_t: "Edle Materialien",
     feature3_d: "Echtleder, italienische Stoffe, Kaschmir und edle Pelze.",
 
@@ -313,7 +313,7 @@ window.TRANSLATIONS = {
 
     press_eyebrow: "Presse",
     press_title: "„Eleganz zeigt sich auch im Leder“",
-    press_p1: "Ein Interview mit Nursel Rhawi über Mode, die Kunst der Lederverarbeitung und über die Frau, die sich für Leder entscheidet. Eine Gelegenheit, die Philosophie der Boutique und die Verbindung zur Familienmanufaktur zu erzählen.",
+    press_p1: "Ein Interview mit Nursel Rhawi über Mode, die Kunst der Lederverarbeitung und über die Frau, die sich für Leder entscheidet. Eine Gelegenheit, die Philosophie der Boutique und die Verbindung zur markeneigenen Manufaktur zu erzählen.",
     press_cta: "Vollständigen Artikel lesen",
 
     reviews_eyebrow: "Stimmen unserer Kundschaft",
