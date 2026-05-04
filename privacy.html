@@ -23,81 +23,142 @@
         <span class="nav__brand-text">Samuel Rhawi<small>by Nursel</small></span>
       </a>
       <nav class="nav__links nav__links--legal">
-        <a href="index.html">Boutique</a>
+        <a href="index.html" data-privacy-field="navBoutique">Boutique</a>
         <a href="grancia.html">Grancia</a>
-        <a href="index.html#contact">Contatti</a>
+        <a href="index.html#contact" data-privacy-field="navContact">Contatti</a>
       </nav>
+      <div class="legal-lang" data-privacy-lang>
+        <button type="button" data-lang="it">IT</button>
+        <button type="button" data-lang="en">EN</button>
+        <button type="button" data-lang="fr">FR</button>
+        <button type="button" data-lang="de">DE</button>
+      </div>
     </div>
   </header>
 
   <main class="legal-page">
     <section class="container legal-wrap">
-      <p class="section__tag">Privacy &amp; Cookie</p>
-      <h1 class="section__title">Informativa privacy e cookie</h1>
-      <p class="legal-updated">Ultimo aggiornamento: 4 maggio 2026</p>
+      <p class="section__tag" data-privacy-field="kicker">Privacy &amp; Cookie</p>
+      <h1 class="section__title" data-privacy-field="title">Informativa privacy e cookie</h1>
+      <p class="legal-updated" data-privacy-field="updated">Ultimo aggiornamento: 4 maggio 2026</p>
 
-      <article class="legal-card">
-        <h2>Titolare del sito</h2>
-        <p>
-          Samuel Rhawi by Nursel, Via Giuseppe Motta 7, 6900 Lugano, Svizzera.
-          Seconda sede: Via Cantonale, 6916 Grancia, Svizzera.
-          Per contatti: <a href="tel:+41766934737">+41 76 693 47 37</a>.
-        </p>
-
-        <h2>Dati trattati</h2>
-        <p>
-          Il sito e' una vetrina statica della boutique. Non sono presenti account, carrelli,
-          pagamenti online, newsletter o strumenti di profilazione. Durante la navigazione possono
-          essere trattati dati tecnici necessari al funzionamento del sito, come indirizzo IP,
-          browser, dispositivo, data e ora della richiesta, tramite i normali log del provider di hosting.
-        </p>
-        <p>
-          Se contatti la boutique via telefono, WhatsApp, Instagram o link esterni, i dati vengono
-          trattati anche dai rispettivi servizi secondo le loro informative.
-        </p>
-
-        <h2>Cookie e tecnologie simili</h2>
-        <p>
-          Il sito non usa cookie di profilazione, pixel pubblicitari, Google Analytics, Meta Pixel,
-          Hotjar, Clarity o strumenti simili. La lingua scelta puo' essere salvata nel browser tramite
-          <code>localStorage</code> con la chiave <code>sr_lang</code>: serve solo a ricordare la
-          preferenza linguistica e non viene usata per tracciare l'utente.
-        </p>
-
-        <h2>Servizi di terze parti</h2>
-        <p>
-          Il sito carica font da Google Fonts. Le mappe di Google Maps non vengono caricate
-          automaticamente: partono solo quando selezioni il pulsante "Carica mappa". I link a
-          WhatsApp, Instagram e Google Maps aprono servizi esterni, che possono trattare dati
-          secondo le proprie policy.
-        </p>
-
-        <h2>Finalita'</h2>
-        <p>
-          I dati tecnici sono usati per rendere disponibile, sicuro e stabile il sito. I dati forniti
-          volontariamente tramite contatto diretto o servizi esterni sono usati per rispondere alle
-          richieste dell'utente, fissare appuntamenti o fornire informazioni sui prodotti.
-        </p>
-
-        <h2>Conservazione e diritti</h2>
-        <p>
-          I dati tecnici nei log del provider sono conservati per il tempo necessario a sicurezza e
-          manutenzione. Puoi chiedere informazioni sui dati che ti riguardano, la rettifica o la
-          cancellazione quando applicabile. Puoi cancellare i dati salvati localmente dal browser
-          tramite le impostazioni del browser stesso.
-        </p>
-      </article>
+      <article class="legal-card" id="privacyContent"></article>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
-        <p class="footer__copy">© <span id="year"></span> Samuel Rhawi by Nursel — <a href="index.html">Torna al sito</a></p>
+        <p class="footer__copy">© <span id="year"></span> Samuel Rhawi by Nursel — <a href="index.html" data-privacy-field="backLink">Torna al sito</a></p>
       </div>
     </div>
   </footer>
 
+  <script>
+  (function () {
+    const STORAGE_KEY = 'sr_lang';
+    const fallback = 'it';
+    const copy = {
+      it: {
+        title: 'Informativa privacy e cookie',
+        updated: 'Ultimo aggiornamento: 4 maggio 2026',
+        navBoutique: 'Boutique',
+        navContact: 'Contatti',
+        backLink: 'Torna al sito',
+        meta: 'Privacy e cookie policy del sito Samuel Rhawi by Nursel, boutique di pelletteria a Lugano e Grancia.',
+        sections: [
+          ['Titolare del sito', ['Samuel Rhawi by Nursel, Via Giuseppe Motta 7, 6900 Lugano, Svizzera. Seconda sede: Via Cantonale, 6916 Grancia, Svizzera. Per contatti: <a href="tel:+41766934737">+41 76 693 47 37</a>.']],
+          ['Dati trattati', ['Il sito e&apos; una vetrina statica della boutique. Non sono presenti account, carrelli, pagamenti online, newsletter o strumenti di profilazione. Durante la navigazione possono essere trattati dati tecnici necessari al funzionamento del sito, come indirizzo IP, browser, dispositivo, data e ora della richiesta, tramite i normali log del provider di hosting.', 'Se contatti la boutique via telefono, WhatsApp, Instagram o link esterni, i dati vengono trattati anche dai rispettivi servizi secondo le loro informative.']],
+          ['Cookie e tecnologie simili', ['Il sito non usa cookie di profilazione, pixel pubblicitari, Google Analytics, Meta Pixel, Hotjar, Clarity o strumenti simili. La lingua scelta puo&apos; essere salvata nel browser tramite <code>localStorage</code> con la chiave <code>sr_lang</code>: serve solo a ricordare la preferenza linguistica e non viene usata per tracciare l&apos;utente.']],
+          ['Servizi di terze parti', ['Il sito carica font da Google Fonts. Le mappe di Google Maps non vengono caricate automaticamente: partono solo quando selezioni il pulsante "Carica mappa". I link a WhatsApp, Instagram e Google Maps aprono servizi esterni, che possono trattare dati secondo le proprie policy.']],
+          ['Finalita&apos;', ['I dati tecnici sono usati per rendere disponibile, sicuro e stabile il sito. I dati forniti volontariamente tramite contatto diretto o servizi esterni sono usati per rispondere alle richieste dell&apos;utente, fissare appuntamenti o fornire informazioni sui prodotti.']],
+          ['Conservazione e diritti', ['I dati tecnici nei log del provider sono conservati per il tempo necessario a sicurezza e manutenzione. Puoi chiedere informazioni sui dati che ti riguardano, la rettifica o la cancellazione quando applicabile. Puoi cancellare i dati salvati localmente dal browser tramite le impostazioni del browser stesso.']]
+        ]
+      },
+      en: {
+        title: 'Privacy and cookie policy',
+        updated: 'Last updated: 4 May 2026',
+        navBoutique: 'Boutique',
+        navContact: 'Contact',
+        backLink: 'Back to the site',
+        meta: 'Privacy and cookie policy for Samuel Rhawi by Nursel, leather boutique in Lugano and Grancia.',
+        sections: [
+          ['Website owner', ['Samuel Rhawi by Nursel, Via Giuseppe Motta 7, 6900 Lugano, Switzerland. Second location: Via Cantonale, 6916 Grancia, Switzerland. Contact: <a href="tel:+41766934737">+41 76 693 47 37</a>.']],
+          ['Data processed', ['This website is a static showcase site for the boutique. It does not provide user accounts, online carts, payments, newsletters or profiling tools. When you browse the site, technical data needed to operate the website may be processed, such as IP address, browser, device, date and time of the request, through normal hosting provider logs.', 'If you contact the boutique by phone, WhatsApp, Instagram or external links, data is also processed by the relevant services under their own policies.']],
+          ['Cookies and similar technologies', ['The site does not use profiling cookies, advertising pixels, Google Analytics, Meta Pixel, Hotjar, Clarity or similar tools. The selected language may be stored in the browser through <code>localStorage</code> using the key <code>sr_lang</code>: it is used only to remember the language preference and is not used to track users.']],
+          ['Third-party services', ['The site loads fonts from Google Fonts. Google Maps is not loaded automatically: maps start only when you select the "Load map" button. Links to WhatsApp, Instagram and Google Maps open external services, which may process data under their own policies.']],
+          ['Purposes', ['Technical data is used to make the website available, secure and stable. Data voluntarily provided through direct contact or external services is used to answer user requests, schedule appointments or provide product information.']],
+          ['Retention and rights', ['Technical data in hosting logs is retained for the time needed for security and maintenance. You may request information about personal data concerning you, correction or deletion where applicable. You may delete locally stored browser data through your browser settings.']]
+        ]
+      },
+      fr: {
+        title: 'Politique de confidentialite et cookies',
+        updated: 'Derniere mise a jour : 4 mai 2026',
+        navBoutique: 'Boutique',
+        navContact: 'Contact',
+        backLink: 'Retour au site',
+        meta: 'Politique de confidentialite et cookies de Samuel Rhawi by Nursel, boutique de maroquinerie a Lugano et Grancia.',
+        sections: [
+          ['Responsable du site', ['Samuel Rhawi by Nursel, Via Giuseppe Motta 7, 6900 Lugano, Suisse. Deuxieme adresse : Via Cantonale, 6916 Grancia, Suisse. Contact : <a href="tel:+41766934737">+41 76 693 47 37</a>.']],
+          ['Donnees traitees', ['Ce site est un site vitrine statique pour la boutique. Il ne propose pas de comptes utilisateurs, paniers en ligne, paiements, newsletter ou outils de profilage. Lors de la navigation, des donnees techniques necessaires au fonctionnement du site peuvent etre traitees, comme l&apos;adresse IP, le navigateur, l&apos;appareil, la date et l&apos;heure de la requete, via les journaux habituels du fournisseur d&apos;hebergement.', 'Si vous contactez la boutique par telephone, WhatsApp, Instagram ou via des liens externes, les donnees sont egalement traitees par les services concernes selon leurs propres politiques.']],
+          ['Cookies et technologies similaires', ['Le site n&apos;utilise pas de cookies de profilage, pixels publicitaires, Google Analytics, Meta Pixel, Hotjar, Clarity ou outils similaires. La langue choisie peut etre enregistree dans le navigateur via <code>localStorage</code> avec la cle <code>sr_lang</code> : elle sert uniquement a memoriser la preference linguistique et n&apos;est pas utilisee pour suivre l&apos;utilisateur.']],
+          ['Services tiers', ['Le site charge des polices depuis Google Fonts. Google Maps n&apos;est pas charge automatiquement : les cartes demarrent uniquement lorsque vous selectionnez le bouton "Charger la carte". Les liens vers WhatsApp, Instagram et Google Maps ouvrent des services externes, qui peuvent traiter des donnees selon leurs propres politiques.']],
+          ['Finalites', ['Les donnees techniques sont utilisees pour rendre le site disponible, securise et stable. Les donnees fournies volontairement via un contact direct ou des services externes sont utilisees pour repondre aux demandes, fixer des rendez-vous ou fournir des informations sur les produits.']],
+          ['Conservation et droits', ['Les donnees techniques dans les journaux d&apos;hebergement sont conservees pendant la duree necessaire a la securite et a la maintenance. Vous pouvez demander des informations sur les donnees personnelles vous concernant, leur rectification ou leur suppression lorsque cela est applicable. Vous pouvez supprimer les donnees stockees localement via les parametres de votre navigateur.']]
+        ]
+      },
+      de: {
+        title: 'Datenschutz- und Cookie-Richtlinie',
+        updated: 'Letzte Aktualisierung: 4. Mai 2026',
+        navBoutique: 'Boutique',
+        navContact: 'Kontakt',
+        backLink: 'Zurueck zur Website',
+        meta: 'Datenschutz- und Cookie-Richtlinie fuer Samuel Rhawi by Nursel, Lederboutique in Lugano und Grancia.',
+        sections: [
+          ['Betreiber der Website', ['Samuel Rhawi by Nursel, Via Giuseppe Motta 7, 6900 Lugano, Schweiz. Zweiter Standort: Via Cantonale, 6916 Grancia, Schweiz. Kontakt: <a href="tel:+41766934737">+41 76 693 47 37</a>.']],
+          ['Verarbeitete Daten', ['Diese Website ist eine statische Praesenzseite der Boutique. Es gibt keine Benutzerkonten, Online-Warenkoerbe, Zahlungen, Newsletter oder Profiling-Tools. Beim Besuch der Website koennen technische Daten verarbeitet werden, die fuer den Betrieb erforderlich sind, z. B. IP-Adresse, Browser, Geraet, Datum und Uhrzeit der Anfrage, ueber die normalen Protokolle des Hosting-Anbieters.', 'Wenn du die Boutique per Telefon, WhatsApp, Instagram oder ueber externe Links kontaktierst, werden Daten auch von den jeweiligen Diensten nach deren eigenen Richtlinien verarbeitet.']],
+          ['Cookies und aehnliche Technologien', ['Die Website verwendet keine Profiling-Cookies, Werbepixel, Google Analytics, Meta Pixel, Hotjar, Clarity oder aehnliche Tools. Die gewaehlte Sprache kann im Browser ueber <code>localStorage</code> mit dem Schluessel <code>sr_lang</code> gespeichert werden: Sie dient nur dazu, die Sprachpraeferenz zu merken, und wird nicht zur Nachverfolgung verwendet.']],
+          ['Dienste von Dritten', ['Die Website laedt Schriftarten von Google Fonts. Google Maps wird nicht automatisch geladen: Karten starten erst, wenn du die Schaltflaeche "Karte laden" auswaehlst. Links zu WhatsApp, Instagram und Google Maps oeffnen externe Dienste, die Daten nach ihren eigenen Richtlinien verarbeiten koennen.']],
+          ['Zwecke', ['Technische Daten werden verwendet, um die Website verfuegbar, sicher und stabil bereitzustellen. Daten, die freiwillig ueber direkten Kontakt oder externe Dienste angegeben werden, werden verwendet, um Anfragen zu beantworten, Termine zu vereinbaren oder Produktinformationen bereitzustellen.']],
+          ['Aufbewahrung und Rechte', ['Technische Daten in Hosting-Protokollen werden so lange aufbewahrt, wie es fuer Sicherheit und Wartung erforderlich ist. Du kannst Auskunft ueber dich betreffende personenbezogene Daten sowie Berichtigung oder Loeschung verlangen, soweit dies anwendbar ist. Lokal gespeicherte Browserdaten kannst du ueber die Browsereinstellungen loeschen.']]
+        ]
+      }
+    };
+
+    function render(lang) {
+      const data = copy[lang] || copy[fallback];
+      document.documentElement.lang = lang;
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute('content', data.meta);
+      document.querySelector('[data-privacy-field="title"]').textContent = data.title;
+      document.querySelector('[data-privacy-field="updated"]').textContent = data.updated;
+      document.querySelector('[data-privacy-field="navBoutique"]').textContent = data.navBoutique;
+      document.querySelector('[data-privacy-field="navContact"]').textContent = data.navContact;
+      document.querySelector('[data-privacy-field="backLink"]').textContent = data.backLink;
+      document.getElementById('privacyContent').innerHTML = data.sections.map(section => {
+        return '<h2>' + section[0] + '</h2>' + section[1].map(p => '<p>' + p + '</p>').join('');
+      }).join('');
+      document.querySelectorAll('[data-privacy-lang] button').forEach(button => {
+        button.classList.toggle('is-active', button.dataset.lang === lang);
+      });
+      try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
+    }
+
+    let initial = fallback;
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (stored && copy[stored]) initial = stored;
+    } catch (e) {}
+    if (initial === fallback) {
+      const browser = (navigator.language || fallback).slice(0, 2).toLowerCase();
+      if (copy[browser]) initial = browser;
+    }
+    document.querySelectorAll('[data-privacy-lang] button').forEach(button => {
+      button.addEventListener('click', () => render(button.dataset.lang));
+    });
+    render(initial);
+  })();
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

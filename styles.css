@@ -1155,6 +1155,26 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -0
 /* ---------- LEGAL PAGE ---------- */
 .legal-body { background: var(--bone); }
 .nav__links--legal { display: flex; }
+.legal-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.legal-lang button {
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,.7);
+  color: var(--navy);
+  padding: 8px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  letter-spacing: .12em;
+  font-family: var(--sans);
+}
+.legal-lang button.is-active {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
 .legal-page {
   padding: clamp(110px, 12vw, 150px) 0 80px;
   color: var(--navy);
