@@ -6,10 +6,9 @@
   // disabilita ripristino scroll automatico del browser (refresh)
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
-  // Se l'utente arriva con una #ancora (es. da grancia.html → index.html#about)
-  // saltiamo l'intro cinematografica e lasciamo che il browser scrolli alla
-  // sezione richiesta.
-  const hasHash = !!window.location.hash && window.location.hash.length > 1;
+  // Se l'utente arriva con una #ancora (es. da grancia.html -> index.html#about),
+  // mostriamo comunque l'intro e poi scorriamo alla sezione richiesta.
+  const targetHash = window.location.hash && window.location.hash.length > 1 ? window.location.hash : '';
 
   // Blocca scroll/interazioni durante l'intro cinematografica
   function lockScroll() {
@@ -21,15 +20,47 @@
     document.body.classList.remove('no-scroll');
   }
 
-  if (!hasHash) {
-    // forza la pagina in cima solo se non c'è una sezione di destinazione
-    window.scrollTo(0, 0);
-    lockScroll();
-  } else {
-    // Nascondi subito il preloader senza animazione quando c'è una #ancora
-    const preEl = document.getElementById('preloader');
-    if (preEl) preEl.style.display = 'none';
+  function stripHashForIntro() {
+    if (!targetHash || !history.replaceState) return;
+    history.replaceState(history.state, document.title, window.location.pathname + window.location.search);
   }
+
+  function restoreHashForSection() {
+    if (!targetHash || !history.replaceState) return;
+    history.replaceState(history.state, document.title, window.location.pathname + window.location.search + targetHash);
+  }
+
+  function getTargetFromHash(hash) {
+    if (!hash) return null;
+    const rawId = hash.slice(1);
+    if (!rawId) return null;
+    try {
+      const id = decodeURIComponent(rawId);
+      return document.getElementById(id) || document.querySelector(hash);
+    } catch (e) {
+      try { return document.querySelector(hash); } catch (err) { return null; }
+    }
+  }
+
+  function scrollToTargetHash() {
+    if (!targetHash) {
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    restoreHashForSection();
+    const target = getTargetFromHash(targetHash);
+    if (!target) return;
+
+    const cs = getComputedStyle(target);
+    const margin = parseFloat(cs.scrollMarginTop) || 0;
+    const top = target.getBoundingClientRect().top + window.scrollY - margin;
+    window.scrollTo({ top, behavior: 'auto' });
+  }
+
+  stripHashForIntro();
+  window.scrollTo(0, 0);
+  lockScroll();
 
   // intercetta qualsiasi tentativo di scroll/touch durante il preloader
   function preventScroll(e) {
@@ -50,20 +81,6 @@
     const pre = document.getElementById('preloader');
     if (!pre) { unlockScroll(); return; }
 
-    if (hasHash) {
-      // Salta l'intro: nascondi subito il preloader e scrolla alla sezione
-      pre.classList.add('is-hidden');
-      unlockScroll();
-      const target = document.querySelector(window.location.hash);
-      if (target) {
-        // doppio rAF per assicurare layout pronto prima dello scroll
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          target.scrollIntoView({ behavior: 'auto', block: 'start' });
-        }));
-      }
-      return;
-    }
-
     // attesa finché animazioni interne completano (~3.6s)
     setTimeout(() => {
       window.scrollTo(0, 0); // garantisce hero visibile
@@ -71,7 +88,7 @@
       // sblocca dopo che il tendone ha iniziato l'apertura
       setTimeout(() => {
         unlockScroll();
-        window.scrollTo(0, 0);
+        requestAnimationFrame(() => requestAnimationFrame(scrollToTargetHash));
       }, 200);
     }, 3800);
   });
