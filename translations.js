@@ -97,7 +97,11 @@ window.TRANSLATIONS = {
     grancia_contact_lead: "Vi aspettiamo al secondo piano del Parco Commerciale Grancia, in Via Cantonale a Grancia.",
     grancia_days_mtwf: "Lun · Mar · Mer · Ven",
     grancia_footer_hours_title: "Orari — Grancia",
-    grancia_lugano_cta: "Visita anche la boutique di Lugano →"
+    grancia_lugano_cta: "Visita anche la boutique di Lugano →",
+    grancia_banner_eyebrow: "Novità",
+    grancia_banner_title: "Ora siamo anche al Parco Commerciale Grancia",
+    grancia_banner_lead: "La stessa eleganza di Lugano centro, al secondo piano del Parco Commerciale. Orari più ampi, stessa qualità.",
+    grancia_banner_cta: "Scopri la boutique di Grancia →"
   },
 
   en: {
@@ -196,7 +200,11 @@ window.TRANSLATIONS = {
     grancia_contact_lead: "We look forward to welcoming you on the second floor of Parco Commerciale Grancia, Via Cantonale, Grancia.",
     grancia_days_mtwf: "Mon \u00b7 Tue \u00b7 Wed \u00b7 Fri",
     grancia_footer_hours_title: "Hours — Grancia",
-    grancia_lugano_cta: "Also visit our Lugano boutique \u2192"
+    grancia_lugano_cta: "Also visit our Lugano boutique \u2192",
+    grancia_banner_eyebrow: "New",
+    grancia_banner_title: "Now also at Parco Commerciale Grancia",
+    grancia_banner_lead: "The same elegance as our Lugano city centre boutique, on the second floor of Parco Commerciale. Extended hours, same quality.",
+    grancia_banner_cta: "Discover the Grancia boutique \u2192"
   },
 
   fr: {
@@ -295,7 +303,11 @@ window.TRANSLATIONS = {
     grancia_contact_lead: "Nous vous attendons au deuxième étage du Parco Commerciale Grancia, Via Cantonale, Grancia.",
     grancia_days_mtwf: "Lun \u00b7 Mar \u00b7 Mer \u00b7 Ven",
     grancia_footer_hours_title: "Horaires — Grancia",
-    grancia_lugano_cta: "Visitez aussi notre boutique de Lugano \u2192"
+    grancia_lugano_cta: "Visitez aussi notre boutique de Lugano \u2192",
+    grancia_banner_eyebrow: "Nouveau",
+    grancia_banner_title: "Désormais aussi au Parco Commerciale Grancia",
+    grancia_banner_lead: "La même élégance qu'au centre de Lugano, au deuxième étage du Parco Commerciale. Horaires étendus, même qualité.",
+    grancia_banner_cta: "Découvrir la boutique de Grancia \u2192"
   },
 
   de: {
@@ -394,6 +406,10 @@ window.TRANSLATIONS = {
     grancia_contact_lead: "Wir freuen uns, Sie im zweiten Stockwerk des Parco Commerciale Grancia, Via Cantonale, Grancia, begrüssen zu dürfen.",
     grancia_days_mtwf: "Mo \u00b7 Di \u00b7 Mi \u00b7 Fr",
     grancia_footer_hours_title: "Öffnungszeiten — Grancia",
-    grancia_lugano_cta: "Besuchen Sie auch unsere Boutique in Lugano \u2192"
+    grancia_lugano_cta: "Besuchen Sie auch unsere Boutique in Lugano \u2192",
+    grancia_banner_eyebrow: "Neu",
+    grancia_banner_title: "Jetzt auch im Parco Commerciale Grancia",
+    grancia_banner_lead: "Die gleiche Eleganz wie im Luganer Stadtzentrum, im zweiten Stockwerk des Parco Commerciale. Erweiterte Öffnungszeiten, gleiche Qualität.",
+    grancia_banner_cta: "Die Boutique in Grancia entdecken \u2192"
   }
 };

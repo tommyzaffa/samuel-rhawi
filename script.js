@@ -6,6 +6,11 @@
   // disabilita ripristino scroll automatico del browser (refresh)
   if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
 
+  // Se l'utente arriva con una #ancora (es. da grancia.html → index.html#about)
+  // saltiamo l'intro cinematografica e lasciamo che il browser scrolli alla
+  // sezione richiesta.
+  const hasHash = !!window.location.hash && window.location.hash.length > 1;
+
   // Blocca scroll/interazioni durante l'intro cinematografica
   function lockScroll() {
     document.documentElement.classList.add('no-scroll');
@@ -15,9 +20,16 @@
     document.documentElement.classList.remove('no-scroll');
     document.body.classList.remove('no-scroll');
   }
-  // forza la pagina in cima
-  window.scrollTo(0, 0);
-  lockScroll();
+
+  if (!hasHash) {
+    // forza la pagina in cima solo se non c'è una sezione di destinazione
+    window.scrollTo(0, 0);
+    lockScroll();
+  } else {
+    // Nascondi subito il preloader senza animazione quando c'è una #ancora
+    const preEl = document.getElementById('preloader');
+    if (preEl) preEl.style.display = 'none';
+  }
 
   // intercetta qualsiasi tentativo di scroll/touch durante il preloader
   function preventScroll(e) {
@@ -37,6 +49,21 @@
   window.addEventListener('load', function () {
     const pre = document.getElementById('preloader');
     if (!pre) { unlockScroll(); return; }
+
+    if (hasHash) {
+      // Salta l'intro: nascondi subito il preloader e scrolla alla sezione
+      pre.classList.add('is-hidden');
+      unlockScroll();
+      const target = document.querySelector(window.location.hash);
+      if (target) {
+        // doppio rAF per assicurare layout pronto prima dello scroll
+        requestAnimationFrame(() => requestAnimationFrame(() => {
+          target.scrollIntoView({ behavior: 'auto', block: 'start' });
+        }));
+      }
+      return;
+    }
+
     // attesa finché animazioni interne completano (~3.6s)
     setTimeout(() => {
       window.scrollTo(0, 0); // garantisce hero visibile
