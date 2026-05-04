@@ -442,12 +442,16 @@
         </div>
 
         <div class="contact__map">
-          <iframe
-            src="https://www.google.com/maps?q=Via+Giuseppe+Motta+7,+6900+Lugano&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Mappa — Samuel Rhawi by Nursel">
-          </iframe>
+          <div class="map-consent" data-map-src="https://www.google.com/maps?q=Via+Giuseppe+Motta+7,+6900+Lugano&amp;output=embed" data-map-title="Mappa — Samuel Rhawi by Nursel">
+            <div class="map-consent__box">
+              <h4>Google Maps</h4>
+              <p>La mappa viene caricata da Google solo dopo il tuo consenso.</p>
+              <div class="map-consent__actions">
+                <button type="button" class="btn btn--solid js-load-map">Carica mappa</button>
+                <a href="https://maps.google.com/?q=Via+Giuseppe+Motta+7,+6900+Lugano" target="_blank" rel="noopener">Apri in Google Maps</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -467,6 +471,7 @@
         <p class="footer__tag" data-i18n="footer_tag">Leather &amp; Shoes — Istanbul · Lugano</p>
         <p class="footer__copy">© <span id="year"></span> Samuel Rhawi by Nursel — <span data-i18n="footer_rights">Tutti i diritti riservati.</span></p>
         <p class="footer__credit"><span data-i18n="footer_credit">Sito sviluppato da</span> <a href="https://tommyzaffa.com" target="_blank" rel="noopener">Thomas Zaffalon</a></p>
+        <p class="footer__legal"><a href="privacy.html">Privacy &amp; Cookie Policy</a></p>
       </div>
     </div>
   </footer>

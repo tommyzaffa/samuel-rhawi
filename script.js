@@ -193,6 +193,23 @@
   const initial = stored && T[stored] ? stored : (T[browser] ? browser : 'it');
   applyLanguage(initial);
 
+  /* ====== THIRD-PARTY MAPS: LOAD ONLY AFTER CLICK ====== */
+  document.querySelectorAll('[data-map-src]').forEach(mapBox => {
+    const button = mapBox.querySelector('.js-load-map');
+    if (!button) return;
+
+    button.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = mapBox.dataset.mapSrc;
+      iframe.title = mapBox.dataset.mapTitle || 'Mappa';
+      iframe.loading = 'lazy';
+      iframe.referrerPolicy = 'no-referrer-when-downgrade';
+      iframe.allowFullscreen = true;
+      mapBox.replaceChildren(iframe);
+      mapBox.classList.add('is-loaded');
+    });
+  });
+
   /* ====== REVEAL ON SCROLL ====== */
   const revealTargets = document.querySelectorAll(
     '.section__head, .about__text, .about__media, .nursel__text, .nursel__media, ' +
