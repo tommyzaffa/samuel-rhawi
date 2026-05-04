@@ -2,6 +2,46 @@
 (function () {
   'use strict';
 
+  /* ====== PRELOADER ====== */
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+  function lockScroll() {
+    document.documentElement.classList.add('no-scroll');
+    document.body.classList.add('no-scroll');
+  }
+  function unlockScroll() {
+    document.documentElement.classList.remove('no-scroll');
+    document.body.classList.remove('no-scroll');
+  }
+  window.scrollTo(0, 0);
+  lockScroll();
+
+  function preventScroll(e) {
+    if (document.documentElement.classList.contains('no-scroll')) {
+      e.preventDefault();
+    }
+  }
+  window.addEventListener('wheel', preventScroll, { passive: false });
+  window.addEventListener('touchmove', preventScroll, { passive: false });
+  window.addEventListener('keydown', function (e) {
+    if (!document.documentElement.classList.contains('no-scroll')) return;
+    const blocked = [' ', 'PageUp', 'PageDown', 'End', 'Home', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
+    if (blocked.includes(e.key)) e.preventDefault();
+  }, false);
+
+  window.addEventListener('load', function () {
+    const pre = document.getElementById('preloader');
+    if (!pre) { unlockScroll(); return; }
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+      pre.classList.add('is-hidden');
+      setTimeout(() => {
+        unlockScroll();
+        window.scrollTo(0, 0);
+      }, 200);
+    }, 3800);
+  });
+
   /* ====== YEAR ====== */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
