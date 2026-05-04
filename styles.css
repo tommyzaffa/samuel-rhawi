@@ -1228,3 +1228,204 @@ h1, h2, h3, h4 { font-family: var(--serif); font-weight: 500; letter-spacing: -0
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* =========================================================
+   GRANCIA — nav link
+   ========================================================= */
+.nav__link--grancia {
+  color: var(--gold) !important;
+}
+.nav__link--grancia::after {
+  background: var(--gold) !important;
+}
+.nav:not(.is-scrolled) .nav__link--grancia {
+  color: var(--gold-soft) !important;
+}
+
+/* =========================================================
+   GRANCIA — HERO
+   ========================================================= */
+.grancia-hero {
+  background: var(--navy);
+  color: var(--ivory);
+  padding: clamp(130px, 18vw, 220px) 0 clamp(80px, 10vw, 130px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.grancia-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(184,153,104,0.10) 0%, transparent 68%);
+  pointer-events: none;
+}
+.grancia-hero__content {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+.grancia-hero__eyebrow {
+  color: var(--gold-soft);
+  padding-left: 0;
+}
+.grancia-hero__eyebrow::before { display: none; }
+.grancia-hero__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(42px, 8vw, 96px);
+  color: var(--white);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin: 28px 0 32px;
+}
+.grancia-hero__title em {
+  font-style: italic;
+  color: var(--gold-soft);
+  font-size: 0.50em;
+  display: block;
+  margin-top: 14px;
+  letter-spacing: 0em;
+}
+.grancia-hero__lead {
+  font-family: var(--serif-alt);
+  font-size: clamp(17px, 1.8vw, 21px);
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255,255,255,0.80);
+  max-width: 580px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+/* =========================================================
+   GRANCIA — ABOUT / FOTO
+   ========================================================= */
+.section--grancia-about { background: var(--ivory); }
+.grancia-about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(40px, 6vw, 88px);
+  align-items: center;
+}
+.grancia-about__photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.grancia-about__photos img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  transition: transform .6s var(--ease);
+}
+.grancia-about__photos img:hover { transform: scale(1.02); }
+.grancia-about__text p {
+  font-size: 16px;
+  margin: 0 0 18px;
+  color: var(--text);
+}
+.grancia-about__cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+.btn--ghost-dark {
+  color: var(--navy);
+  border-color: var(--navy);
+  background: transparent;
+}
+.btn--ghost-dark:hover {
+  background: var(--navy);
+  color: var(--ivory);
+}
+
+/* =========================================================
+   GRANCIA — CONTACT (reuses .section--contact styles)
+   ========================================================= */
+.section--grancia-contact { background: var(--white); }
+.grancia-floor {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin: 4px 0 8px !important;
+  font-family: var(--sans);
+}
+
+/* =========================================================
+   GRANCIA — FOOTER
+   ========================================================= */
+.footer--grancia .footer__grid--grancia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+  text-align: left;
+}
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer--grancia .footer__brand { justify-content: flex-start; }
+.footer--grancia .footer__tag,
+.footer--grancia .footer__copy,
+.footer--grancia .footer__credit { text-align: left; margin: 0; }
+
+.footer__hours-block { padding-top: 4px; }
+.footer__hours-block h4 {
+  font-family: var(--sans);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+  margin: 0 0 18px;
+}
+.hours--light li {
+  color: rgba(248,245,240,0.65);
+  border-bottom-color: rgba(255,255,255,0.08);
+}
+.hours--light li > span:first-child {
+  color: var(--ivory);
+  font-weight: 500;
+}
+
+/* =========================================================
+   GRANCIA — RESPONSIVE
+   ========================================================= */
+@media (max-width: 1024px) {
+  .grancia-about__grid { gap: 48px; }
+}
+
+@media (max-width: 860px) {
+  .grancia-about__grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .grancia-about__photos { grid-template-columns: 1fr 1fr; }
+  .grancia-about__cta { flex-direction: column; }
+  .footer--grancia .footer__grid--grancia {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    text-align: center;
+  }
+  .footer--grancia .footer__brand { justify-content: center; }
+  .footer--grancia .footer__tag,
+  .footer--grancia .footer__copy,
+  .footer--grancia .footer__credit { text-align: center; }
+  .footer__hours-block { text-align: center; }
+  .footer__hours-block h4 { text-align: center; }
+}
+
+@media (max-width: 520px) {
+  .grancia-about__photos { gap: 8px; }
+  .grancia-about__cta { padding: 0; }
+  .grancia-about__cta .btn { width: 100%; justify-content: center; }
+}

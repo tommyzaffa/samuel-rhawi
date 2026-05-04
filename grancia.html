@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samuel Rhawi by Nursel — Boutique al Parco Commerciale Grancia</title>
+  <meta name="description" content="Samuel Rhawi by Nursel ora anche a Grancia, al secondo piano del Parco Commerciale. Pelletteria, borse, calzature e accessori in vera pelle. Orari flessibili. Via Cantonale, 6916 Grancia." />
+  <meta name="theme-color" content="#1e3a5f" />
+
+  <link rel="icon" type="image/webp" href="img/logo (abbreviato ma buona qualita).jpg.webp" />
+  <link rel="apple-touch-icon" href="img/logo (abbreviato ma buona qualita).jpg.webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand" aria-label="Samuel Rhawi by Nursel">
+        <img src="img/logo (abbreviato ma buona qualita).jpg.webp" alt="" class="nav__logo" />
+        <span class="nav__brand-text">Samuel Rhawi<small>by Nursel</small></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="index.html#about" data-i18n="nav_about">La Maison</a>
+        <a href="index.html#nursel" data-i18n="nav_nursel">Nursel</a>
+        <a href="index.html#collection" data-i18n="nav_collection">Collezione</a>
+        <a href="index.html#boutique" data-i18n="nav_boutique">Boutique</a>
+        <a href="index.html#press" data-i18n="nav_press">Stampa</a>
+        <a href="index.html#reviews" data-i18n="nav_reviews">Recensioni</a>
+        <a href="index.html#contact" data-i18n="nav_contact">Contatti</a>
+        <a href="grancia.html" data-i18n="nav_grancia" class="nav__link--grancia" aria-current="page">Grancia</a>
+      </nav>
+
+      <div class="nav__right">
+        <div class="lang" id="lang">
+          <button class="lang__current" id="langCurrent" aria-haspopup="listbox" aria-expanded="false">
+            <span id="langLabel">IT</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="lang__menu" role="listbox">
+            <li><button data-lang="it" role="option">Italiano</button></li>
+            <li><button data-lang="en" role="option">English</button></li>
+            <li><button data-lang="fr" role="option">Français</button></li>
+            <li><button data-lang="de" role="option">Deutsch</button></li>
+          </ul>
+        </div>
+
+        <button class="nav__burger" id="navBurger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO GRANCIA ============ -->
+  <section class="grancia-hero">
+    <div class="container">
+      <div class="grancia-hero__content">
+        <span class="section__eyebrow grancia-hero__eyebrow" data-i18n="grancia_eyebrow">Parco Commerciale Grancia</span>
+        <h1 class="grancia-hero__title" data-i18n="grancia_title">Samuel Rhawi<br/><em>è ora a Grancia</em></h1>
+        <p class="grancia-hero__lead" data-i18n="grancia_lead">La stessa eleganza di Lugano centro, ora al secondo piano del Parco Commerciale Grancia. Orari più ampi per tua comodità.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT / FOTO ============ -->
+  <section class="section section--grancia-about">
+    <div class="container">
+      <div class="grancia-about__grid">
+        <div class="grancia-about__photos">
+          <img src="img/modella 5.png" alt="Samuel Rhawi by Nursel — Grancia" loading="lazy" />
+          <img src="img/modella 6.png" alt="Samuel Rhawi by Nursel — Grancia" loading="lazy" />
+        </div>
+        <div class="grancia-about__text">
+          <span class="section__eyebrow" data-i18n="grancia_about_eyebrow">La Nuova Sede</span>
+          <h2 class="section__title" data-i18n="grancia_about_title">Pelletteria di lusso<br/>a Grancia</h2>
+          <p data-i18n="grancia_about_p1">Samuel Rhawi by Nursel ha aperto una nuova boutique al secondo piano del Parco Commerciale Grancia. Borse, calzature, cinture, giacche e accessori in vera pelle — la stessa raffinata selezione della sede di Lugano centro.</p>
+          <p data-i18n="grancia_about_p2">Orari più flessibili rispetto alla sede di Via Motta, con apertura serale il giovedì fino alle 21:00. Stesso numero di telefono e WhatsApp per prenotare una visita o richiedere informazioni sui prodotti.</p>
+          <div class="grancia-about__cta">
+            <a href="https://parcograncia.ch/negozi/" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--ghost-dark" data-i18n="grancia_shop_link">Scopri gli altri negozi del Parco →</a>
+            <a href="index.html" class="btn btn--solid" data-i18n="grancia_lugano_cta">Visita anche la boutique di Lugano →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact section--grancia-contact">
+    <div class="container">
+      <div class="section__head section__head--center">
+        <span class="section__eyebrow" data-i18n="grancia_contact_eyebrow">Vieni a trovarci</span>
+        <h2 class="section__title" data-i18n="grancia_contact_title">Boutique a Grancia</h2>
+        <p class="section__lead" data-i18n="grancia_contact_lead">Vi aspettiamo al secondo piano del Parco Commerciale Grancia, in Via Cantonale a Grancia.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info">
+          <div class="contact__row">
+            <h4 data-i18n="contact_address_title">Indirizzo</h4>
+            <p>Via Cantonale<br/>6916 Grancia · Svizzera</p>
+            <p class="grancia-floor">Parco Commerciale Grancia, 2° piano</p>
+            <a href="https://maps.google.com/?q=Via+Cantonale,+6916+Grancia" target="_blank" rel="noopener" data-i18n="contact_directions">Indicazioni stradali →</a>
+          </div>
+
+          <div class="contact__row">
+            <h4 data-i18n="contact_phone_title">Telefono & WhatsApp</h4>
+            <p><a href="tel:+41766934737">+41 76 693 47 37</a></p>
+            <a class="contact__wa" href="https://wa.me/41766934737" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.34 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+              <span data-i18n="contact_wa_label">Scrivici su WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="contact__row">
+            <h4 data-i18n="contact_hours_title">Orari di apertura</h4>
+            <ul class="hours">
+              <li><span data-i18n="grancia_days_mtwf">Lun · Mar · Mer · Ven</span><span>09:00 — 19:00</span></li>
+              <li><span data-i18n="day_thu">Giovedì</span><span>09:00 — 21:00</span></li>
+              <li><span data-i18n="day_sat">Sabato</span><span>09:00 — 18:30</span></li>
+              <li><span data-i18n="day_sun">Domenica</span><span data-i18n="closed">Chiuso</span></li>
+            </ul>
+          </div>
+
+          <div class="contact__row">
+            <h4 data-i18n="contact_social_title">Social</h4>
+            <a href="https://www.instagram.com/samuel_rhawi_by_nursel" target="_blank" rel="noopener" class="contact__social">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+              <span>@samuel_rhawi_by_nursel</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact__map">
+          <iframe
+            src="https://www.google.com/maps?q=Via+Cantonale,+6916+Grancia&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mappa — Samuel Rhawi by Nursel Grancia">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer footer--grancia">
+    <div class="container">
+      <div class="footer__grid footer__grid--grancia">
+        <div class="footer__left">
+          <div class="footer__brand">
+            <img src="img/logo (abbreviato ma buona qualita).jpg.webp" alt="" />
+            <div>
+              <strong>Samuel Rhawi</strong>
+              <span>by Nursel</span>
+            </div>
+          </div>
+          <p class="footer__tag" data-i18n="footer_tag">Leather &amp; Shoes — Istanbul · Lugano</p>
+          <p class="footer__copy">© <span id="year"></span> Samuel Rhawi by Nursel — <span data-i18n="footer_rights">Tutti i diritti riservati.</span></p>
+          <p class="footer__credit"><span data-i18n="footer_credit">Sito sviluppato da</span> <a href="https://tommyzaffa.com" target="_blank" rel="noopener">Thomas Zaffalon</a></p>
+        </div>
+        <div class="footer__hours-block">
+          <h4 data-i18n="grancia_footer_hours_title">Orari — Grancia</h4>
+          <ul class="hours hours--light">
+            <li><span data-i18n="grancia_days_mtwf">Lun · Mar · Mer · Ven</span><span>09:00 — 19:00</span></li>
+            <li><span data-i18n="day_thu">Giovedì</span><span>09:00 — 21:00</span></li>
+            <li><span data-i18n="day_sat">Sabato</span><span>09:00 — 18:30</span></li>
+            <li><span data-i18n="day_sun">Domenica</span><span data-i18n="closed">Chiuso</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ FLOATING WHATSAPP ============ -->
+  <a class="fab-wa" href="https://wa.me/41766934737" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.34 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.607zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+  </a>
+
+  <script src="translations.js"></script>
+  <script src="grancia.js"></script>
+</body>
+</html>

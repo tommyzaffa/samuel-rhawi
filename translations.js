@@ -9,6 +9,7 @@ window.TRANSLATIONS = {
     nav_press: "Stampa",
     nav_reviews: "Recensioni",
     nav_contact: "Contatti",
+    nav_grancia: "Grancia",
 
     hero_eyebrow: "Istanbul · Lugano",
     hero_tagline: "L'eleganza autentica della pelle pregiata.",
@@ -52,10 +53,6 @@ window.TRANSLATIONS = {
     feature3_t: "Materiali pregiati",
     feature3_d: "Vera pelle, tessuti italiani, cashmere e pellicce nobili.",
 
-    coming_tag: "Coming Soon",
-    coming_title: "Una nuova boutique al Parco Commerciale Grancia",
-    coming_text: "Presto Nursel aprirà una seconda sede al Parco Commerciale Grancia, per portare ancora più vicino l'eleganza Samuel Rhawi.",
-
     press_eyebrow: "Stampa",
     press_title: "«L'eleganza passa anche dal vestire in pelle»",
     press_p1: "Un'intervista a Nursel Rhawi sulla moda, sull'arte della pelletteria e sulla donna che sceglie di vestire la pelle. Un'occasione per raccontare la filosofia che anima la boutique e il legame con la manifattura del marchio.",
@@ -67,6 +64,7 @@ window.TRANSLATIONS = {
     review1: "«Buona selezione di scarpe in pelle per uomo e donna a prezzi molto ragionevoli. Design e qualità eccellenti. Ho comprato un paio e ne sono entusiasta.»",
     review2: "«Il miglior negozio di pelletteria di Lugano.»",
     review3: "«Ragazza adorabile, prodotti di qualità a un prezzo molto buono.»",
+    review4: "«Ottimo servizio e meravigliosa stilista.»",
 
     contact_eyebrow: "Vieni a trovarci",
     contact_title: "Boutique a Lugano",
@@ -83,7 +81,23 @@ window.TRANSLATIONS = {
 
     footer_tag: "Leather & Shoes — Istanbul · Lugano",
     footer_rights: "Tutti i diritti riservati.",
-    footer_credit: "Sito sviluppato da"
+    footer_credit: "Sito sviluppato da",
+
+    /* --- Pagina Grancia --- */
+    grancia_eyebrow: "Parco Commerciale Grancia",
+    grancia_title: "Samuel Rhawi<br/><em>è ora a Grancia</em>",
+    grancia_lead: "La stessa eleganza di Lugano centro, ora al secondo piano del Parco Commerciale Grancia. Orari più ampi per tua comodità.",
+    grancia_about_eyebrow: "La Nuova Sede",
+    grancia_about_title: "Pelletteria di lusso<br/>a Grancia",
+    grancia_about_p1: "Samuel Rhawi by Nursel ha aperto una nuova boutique al secondo piano del Parco Commerciale Grancia. Borse, calzature, cinture, giacche e accessori in vera pelle — la stessa raffinata selezione della sede di Lugano centro.",
+    grancia_about_p2: "Orari più flessibili rispetto alla sede di Via Motta, con apertura serale il giovedì fino alle 21:00. Stesso numero di telefono e WhatsApp per prenotare una visita o richiedere informazioni sui prodotti.",
+    grancia_shop_link: "Scopri gli altri negozi del Parco →",
+    grancia_contact_eyebrow: "Vieni a trovarci",
+    grancia_contact_title: "Boutique a Grancia",
+    grancia_contact_lead: "Vi aspettiamo al secondo piano del Parco Commerciale Grancia, in Via Cantonale a Grancia.",
+    grancia_days_mtwf: "Lun · Mar · Mer · Ven",
+    grancia_footer_hours_title: "Orari — Grancia",
+    grancia_lugano_cta: "Visita anche la boutique di Lugano →"
   },
 
   en: {
@@ -94,6 +108,7 @@ window.TRANSLATIONS = {
     nav_press: "Press",
     nav_reviews: "Reviews",
     nav_contact: "Contact",
+    nav_grancia: "Grancia",
 
     hero_eyebrow: "Istanbul · Lugano",
     hero_tagline: "The authentic elegance of fine leather.",
@@ -109,11 +124,11 @@ window.TRANSLATIONS = {
 
     nursel_eyebrow: "The woman behind the boutique",
     nursel_title: "Nursel",
-    nursel_lead: "“A woman who wears leather has strong character and conviction. Leather never goes unnoticed — it is a way of being that radiates elegance.”",
+    nursel_lead: "\u201cA woman who wears leather has strong character and conviction. Leather never goes unnoticed — it is a way of being that radiates elegance.\u201d",
     nursel_p1: "Nursel is the face and heart of the Lugano boutique. A seasoned professional with deep knowledge of fine leather goods, she welcomes every client with personalised service and carefully curated collections.",
     nursel_p2: "Thanks to the direct supply chain with the brand's own workshop, Nursel offers the possibility to order custom pieces and special sizes not available in the showroom, with delivery in just a few days.",
 
-    quote_text: "“Fashion is like a wave: it arrives with force and then disappears, leaving a thousand interpretations behind. Leather, on the other hand, always returns — because it is not fashion, it is elegance.”",
+    quote_text: "\u201cFashion is like a wave: it arrives with force and then disappears, leaving a thousand interpretations behind. Leather, on the other hand, always returns — because it is not fashion, it is elegance.\u201d",
 
     collection_eyebrow: "The Collection",
     collection_title: "Leather goods, footwear, accessories",
@@ -137,27 +152,24 @@ window.TRANSLATIONS = {
     feature3_t: "Premium materials",
     feature3_d: "Genuine leather, Italian fabrics, cashmere and noble furs.",
 
-    coming_tag: "Coming Soon",
-    coming_title: "A new boutique at Parco Commerciale Grancia",
-    coming_text: "Nursel will soon open a second location at Parco Commerciale Grancia, bringing Samuel Rhawi elegance even closer.",
-
     press_eyebrow: "Press",
-    press_title: "“Elegance also comes from dressing in leather”",
+    press_title: "\u201cElegance also comes from dressing in leather\u201d",
     press_p1: "An interview with Nursel Rhawi about fashion, the art of leather and the woman who chooses to dress in it. An occasion to share the philosophy that animates the boutique and the bond with the brand's own workshop.",
     press_cta: "Read the full article",
 
     reviews_eyebrow: "Voices of our clients",
     reviews_title: "Reviews",
     reviews_rating: "5.0 out of 5 — Google Reviews",
-    review1: "“Good selection of leather shoes for men and women with very reasonable prices. Design and quality are excellent. Bought a pair and loving it.”",
-    review2: "“Best leather shop in Lugano.”",
-    review3: "“Adorable lady, quality products at a very good price.”",
+    review1: "\u201cGood selection of leather shoes for men and women with very reasonable prices. Design and quality are excellent. Bought a pair and loving it.\u201d",
+    review2: "\u201cBest leather shop in Lugano.\u201d",
+    review3: "\u201cAdorable lady, quality products at a very good price.\u201d",
+    review4: "\u201cExcellent service and wonderful stylist.\u201d",
 
     contact_eyebrow: "Come visit us",
     contact_title: "Boutique in Lugano",
     contact_lead: "We look forward to welcoming you to our showroom to discover the collections, receive personalised advice and try on our leather pieces.",
     contact_address_title: "Address",
-    contact_directions: "Get directions →",
+    contact_directions: "Get directions \u2192",
     contact_phone_title: "Phone & WhatsApp",
     contact_wa_label: "Message us on WhatsApp",
     contact_hours_title: "Opening hours",
@@ -168,7 +180,23 @@ window.TRANSLATIONS = {
 
     footer_tag: "Leather & Shoes — Istanbul · Lugano",
     footer_rights: "All rights reserved.",
-    footer_credit: "Website developed by"
+    footer_credit: "Website developed by",
+
+    /* --- Grancia page --- */
+    grancia_eyebrow: "Parco Commerciale Grancia",
+    grancia_title: "Samuel Rhawi<br/><em>now also in Grancia</em>",
+    grancia_lead: "The same elegance as our Lugano city centre boutique, now on the second floor of Parco Commerciale Grancia. Extended opening hours for your convenience.",
+    grancia_about_eyebrow: "The New Location",
+    grancia_about_title: "Luxury leather goods<br/>in Grancia",
+    grancia_about_p1: "Samuel Rhawi by Nursel has opened a new boutique on the second floor of Parco Commerciale Grancia. Bags, footwear, belts, jackets and genuine leather accessories — the same refined selection as our Lugano city centre location.",
+    grancia_about_p2: "More flexible opening hours than our Via Motta boutique, with Thursday evening opening until 9 pm. Same phone number and WhatsApp for bookings or product enquiries.",
+    grancia_shop_link: "Discover more shops at the centre \u2192",
+    grancia_contact_eyebrow: "Come visit us",
+    grancia_contact_title: "Boutique in Grancia",
+    grancia_contact_lead: "We look forward to welcoming you on the second floor of Parco Commerciale Grancia, Via Cantonale, Grancia.",
+    grancia_days_mtwf: "Mon \u00b7 Tue \u00b7 Wed \u00b7 Fri",
+    grancia_footer_hours_title: "Hours — Grancia",
+    grancia_lugano_cta: "Also visit our Lugano boutique \u2192"
   },
 
   fr: {
@@ -179,6 +207,7 @@ window.TRANSLATIONS = {
     nav_press: "Presse",
     nav_reviews: "Avis",
     nav_contact: "Contact",
+    nav_grancia: "Grancia",
 
     hero_eyebrow: "Istanbul · Lugano",
     hero_tagline: "L'élégance authentique du cuir précieux.",
@@ -222,10 +251,6 @@ window.TRANSLATIONS = {
     feature3_t: "Matières précieuses",
     feature3_d: "Cuir véritable, tissus italiens, cachemire et fourrures nobles.",
 
-    coming_tag: "Bientôt",
-    coming_title: "Une nouvelle boutique au Parco Commerciale Grancia",
-    coming_text: "Nursel ouvrira bientôt une seconde adresse au Parco Commerciale Grancia, pour rapprocher encore l'élégance Samuel Rhawi.",
-
     press_eyebrow: "Presse",
     press_title: "« L'élégance passe aussi par le cuir »",
     press_p1: "Un entretien avec Nursel Rhawi sur la mode, l'art de la maroquinerie et la femme qui choisit de s'habiller en cuir. L'occasion de partager la philosophie qui anime la boutique et le lien avec la manufacture de la marque.",
@@ -237,12 +262,13 @@ window.TRANSLATIONS = {
     review1: "« Belle sélection de chaussures en cuir pour homme et femme à des prix très raisonnables. Design et qualité excellents. J'ai acheté une paire et je l'adore. »",
     review2: "« La meilleure boutique de cuir à Lugano. »",
     review3: "« Adorable jeune femme, produits de qualité à un très bon prix. »",
+    review4: "« Excellent service et merveilleuse styliste. »",
 
     contact_eyebrow: "Venez nous rendre visite",
     contact_title: "Boutique à Lugano",
     contact_lead: "Nous vous attendons dans notre showroom pour découvrir les collections, recevoir des conseils personnalisés et essayer nos pièces en cuir.",
     contact_address_title: "Adresse",
-    contact_directions: "Itinéraire →",
+    contact_directions: "Itinéraire \u2192",
     contact_phone_title: "Téléphone & WhatsApp",
     contact_wa_label: "Écrivez-nous sur WhatsApp",
     contact_hours_title: "Horaires d'ouverture",
@@ -253,7 +279,23 @@ window.TRANSLATIONS = {
 
     footer_tag: "Leather & Shoes — Istanbul · Lugano",
     footer_rights: "Tous droits réservés.",
-    footer_credit: "Site développé par"
+    footer_credit: "Site développé par",
+
+    /* --- Page Grancia --- */
+    grancia_eyebrow: "Parco Commerciale Grancia",
+    grancia_title: "Samuel Rhawi<br/><em>désormais aussi à Grancia</em>",
+    grancia_lead: "La même élégance qu'au centre de Lugano, désormais au deuxième étage du Parco Commerciale Grancia. Des horaires plus larges pour votre commodité.",
+    grancia_about_eyebrow: "Le Nouvel Espace",
+    grancia_about_title: "Maroquinerie de luxe<br/>à Grancia",
+    grancia_about_p1: "Samuel Rhawi by Nursel a ouvert une nouvelle boutique au deuxième étage du Parco Commerciale Grancia. Sacs, chaussures, ceintures, vestes et accessoires en cuir véritable — la même sélection raffinée qu'à notre boutique du centre de Lugano.",
+    grancia_about_p2: "Des horaires plus souples qu'à la boutique de la Via Motta, avec une ouverture en soirée le jeudi jusqu'à 21h00. Même numéro de téléphone et WhatsApp pour réserver une visite ou obtenir des informations sur les produits.",
+    grancia_shop_link: "Découvrir les autres boutiques du centre \u2192",
+    grancia_contact_eyebrow: "Venez nous rendre visite",
+    grancia_contact_title: "Boutique à Grancia",
+    grancia_contact_lead: "Nous vous attendons au deuxième étage du Parco Commerciale Grancia, Via Cantonale, Grancia.",
+    grancia_days_mtwf: "Lun \u00b7 Mar \u00b7 Mer \u00b7 Ven",
+    grancia_footer_hours_title: "Horaires — Grancia",
+    grancia_lugano_cta: "Visitez aussi notre boutique de Lugano \u2192"
   },
 
   de: {
@@ -264,6 +306,7 @@ window.TRANSLATIONS = {
     nav_press: "Presse",
     nav_reviews: "Bewertungen",
     nav_contact: "Kontakt",
+    nav_grancia: "Grancia",
 
     hero_eyebrow: "Istanbul · Lugano",
     hero_tagline: "Die authentische Eleganz edlen Leders.",
@@ -279,11 +322,11 @@ window.TRANSLATIONS = {
 
     nursel_eyebrow: "Die Frau hinter der Boutique",
     nursel_title: "Nursel",
-    nursel_lead: "„Eine Frau, die Leder trägt, hat starken Charakter und Entschlossenheit. Leder bleibt nie unbemerkt — es ist eine Art zu sein, die Eleganz ausstrahlt.“",
+    nursel_lead: "\u201eEine Frau, die Leder trägt, hat starken Charakter und Entschlossenheit. Leder bleibt nie unbemerkt — es ist eine Art zu sein, die Eleganz ausstrahlt.\u201c",
     nursel_p1: "Nursel ist das Gesicht und das Herz der Lugano-Boutique. Als erfahrene Fachfrau mit tiefem Wissen über Lederwaren empfängt sie jede Kundin mit persönlichem Service und sorgfältig kuratierten Kollektionen.",
     nursel_p2: "Dank der direkten Lieferkette zur markeneigenen Manufaktur bietet Nursel die Möglichkeit, individuelle Stücke und Sondergrössen zu bestellen, die im Showroom nicht erhältlich sind — Lieferung in nur wenigen Tagen.",
 
-    quote_text: "„Mode ist wie eine Welle: Sie kommt mit Wucht und verschwindet wieder, hinterlässt tausend Interpretationen. Leder hingegen kehrt immer zurück — denn es ist keine Mode, es ist Eleganz.“",
+    quote_text: "\u201eMo de ist wie eine Welle: Sie kommt mit Wucht und verschwindet wieder, hinterlässt tausend Interpretationen. Leder hingegen kehrt immer zurück — denn es ist keine Mode, es ist Eleganz.\u201c",
 
     collection_eyebrow: "Die Kollektion",
     collection_title: "Lederwaren, Schuhe, Accessoires",
@@ -307,27 +350,24 @@ window.TRANSLATIONS = {
     feature3_t: "Edle Materialien",
     feature3_d: "Echtleder, italienische Stoffe, Kaschmir und edle Pelze.",
 
-    coming_tag: "Demnächst",
-    coming_title: "Eine neue Boutique im Parco Commerciale Grancia",
-    coming_text: "Nursel wird bald einen zweiten Standort im Parco Commerciale Grancia eröffnen, um die Eleganz von Samuel Rhawi noch näher zu bringen.",
-
     press_eyebrow: "Presse",
-    press_title: "„Eleganz zeigt sich auch im Leder“",
+    press_title: "\u201eEleganz zeigt sich auch im Leder\u201c",
     press_p1: "Ein Interview mit Nursel Rhawi über Mode, die Kunst der Lederverarbeitung und über die Frau, die sich für Leder entscheidet. Eine Gelegenheit, die Philosophie der Boutique und die Verbindung zur markeneigenen Manufaktur zu erzählen.",
     press_cta: "Vollständigen Artikel lesen",
 
     reviews_eyebrow: "Stimmen unserer Kundschaft",
     reviews_title: "Bewertungen",
     reviews_rating: "5,0 von 5 — Google-Bewertungen",
-    review1: "„Gute Auswahl an Lederschuhen für Damen und Herren zu sehr fairen Preisen. Design und Qualität sind hervorragend. Ein Paar gekauft und begeistert davon.“",
-    review2: "„Das beste Ledergeschäft in Lugano.“",
-    review3: "„Bezaubernde junge Frau, hochwertige Produkte zu sehr gutem Preis.“",
+    review1: "\u201eGute Auswahl an Lederschuhen für Damen und Herren zu sehr fairen Preisen. Design und Qualität sind hervorragend. Ein Paar gekauft und begeistert davon.\u201c",
+    review2: "\u201eDas beste Ledergeschäft in Lugano.\u201c",
+    review3: "\u201eBezaubernde junge Frau, hochwertige Produkte zu sehr gutem Preis.\u201c",
+    review4: "\u201eAusgezeichneter Service und wunderbare Stylistin.\u201c",
 
     contact_eyebrow: "Besuchen Sie uns",
     contact_title: "Boutique in Lugano",
     contact_lead: "Wir freuen uns, Sie in unserem Showroom willkommen zu heissen, um die Kollektionen zu entdecken, persönliche Beratung zu erhalten und unsere Lederstücke anzuprobieren.",
     contact_address_title: "Adresse",
-    contact_directions: "Wegbeschreibung →",
+    contact_directions: "Wegbeschreibung \u2192",
     contact_phone_title: "Telefon & WhatsApp",
     contact_wa_label: "Schreiben Sie uns auf WhatsApp",
     contact_hours_title: "Öffnungszeiten",
@@ -338,6 +378,22 @@ window.TRANSLATIONS = {
 
     footer_tag: "Leather & Shoes — Istanbul · Lugano",
     footer_rights: "Alle Rechte vorbehalten.",
-    footer_credit: "Website entwickelt von"
+    footer_credit: "Website entwickelt von",
+
+    /* --- Grancia-Seite --- */
+    grancia_eyebrow: "Parco Commerciale Grancia",
+    grancia_title: "Samuel Rhawi<br/><em>jetzt auch in Grancia</em>",
+    grancia_lead: "Die gleiche Eleganz wie im Luganer Stadtzentrum, jetzt im zweiten Stockwerk des Parco Commerciale Grancia. Erweiterte Öffnungszeiten für Ihre Bequemlichkeit.",
+    grancia_about_eyebrow: "Der neue Standort",
+    grancia_about_title: "Luxuslederwaren<br/>in Grancia",
+    grancia_about_p1: "Samuel Rhawi by Nursel hat eine neue Boutique im zweiten Stockwerk des Parco Commerciale Grancia eröffnet. Taschen, Schuhe, Gürtel, Jacken und Echtleder-Accessoires — die gleiche erlesene Auswahl wie in unserer Luganer Stadtboutique.",
+    grancia_about_p2: "Flexiblere Öffnungszeiten als in der Boutique an der Via Motta, donnerstags abends bis 21:00 Uhr geöffnet. Gleiche Telefonnummer und WhatsApp für Terminbuchungen oder Produktanfragen.",
+    grancia_shop_link: "Weitere Geschäfte im Center entdecken \u2192",
+    grancia_contact_eyebrow: "Besuchen Sie uns",
+    grancia_contact_title: "Boutique in Grancia",
+    grancia_contact_lead: "Wir freuen uns, Sie im zweiten Stockwerk des Parco Commerciale Grancia, Via Cantonale, Grancia, begrüssen zu dürfen.",
+    grancia_days_mtwf: "Mo \u00b7 Di \u00b7 Mi \u00b7 Fr",
+    grancia_footer_hours_title: "Öffnungszeiten — Grancia",
+    grancia_lugano_cta: "Besuchen Sie auch unsere Boutique in Lugano \u2192"
   }
 };
